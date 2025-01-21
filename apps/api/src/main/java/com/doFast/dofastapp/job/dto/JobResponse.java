@@ -11,6 +11,7 @@ public record JobResponse(
         String description,
         BigDecimal price,
         JobStatus status,
+        String locationLabel,
         Long createdById,
         Long takenById,
         LocalDateTime createdAt,
