@@ -12,6 +12,7 @@ on:
       - "apps/api/src/main/java/com/doFast/dofastapp/location/routing/**"
       - "apps/api/src/main/java/com/doFast/dofastapp/dispute/**"
       - "apps/api/src/main/resources/db/migration/V9__payments_and_ledger_hardening.sql"
+      - "apps/api/src/main/resources/db/migration/V38__platform_fee_settlement.sql"
   pull_request:
     branches: [master]
     paths:
@@ -23,6 +24,7 @@ on:
       - "apps/api/src/main/java/com/doFast/dofastapp/location/routing/**"
       - "apps/api/src/main/java/com/doFast/dofastapp/dispute/**"
       - "apps/api/src/main/resources/db/migration/V9__payments_and_ledger_hardening.sql"
+      - "apps/api/src/main/resources/db/migration/V38__platform_fee_settlement.sql"
 
 permissions:
   contents: read
@@ -44,6 +46,9 @@ jobs:
           sed -i 's/^ADMIN_BOOTSTRAP_EMAIL=.*/ADMIN_BOOTSTRAP_EMAIL=admin-ledger@example.com/' .env
           sed -i 's/^ADMIN_BOOTSTRAP_PASSWORD=.*/ADMIN_BOOTSTRAP_PASSWORD=AdminLedgerPass123!/' .env
           sed -i 's/^ADMIN_BOOTSTRAP_NICKNAME=.*/ADMIN_BOOTSTRAP_NICKNAME=Ledger Admin/' .env
+          # This workflow isolates wallet concurrency/idempotency and preserves its historical gross-release assertions.
+          # The dedicated Platform fee settlement smoke exercises the production 1% gross/fee/net path.
+          sed -i 's/^PLATFORM_FEE_BASIS_POINTS=.*/PLATFORM_FEE_BASIS_POINTS=0/' .env
 
       - name: Build API with transient registry retry
         shell: bash
