@@ -13,10 +13,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
 import java.time.Clock;
-import java.time.Instant;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.atomic.AtomicLong;
+import java.util.Objects;
 import java.util.regex.Pattern;
 
 public class AuthenticatedRoutingRateLimitFilter extends OncePerRequestFilter {
@@ -28,12 +25,8 @@ public class AuthenticatedRoutingRateLimitFilter extends OncePerRequestFilter {
     private static final int CREATE_QUOTE_PROVIDER_CALLS = 1;
     private static final int MODE_ESTIMATES_PROVIDER_CALLS = 2;
 
-    private final Map<String, Window> windows = new ConcurrentHashMap<>();
-    private final AtomicLong requestsSinceCleanup = new AtomicLong();
     private final Clock clock;
-    private final int maxProviderCalls;
-    private final long windowSeconds;
-    private final int maxEntries;
+    private final InMemoryFixedWindowRateLimiter rateLimiter;
 
     public AuthenticatedRoutingRateLimitFilter(
             int maxProviderCalls,
@@ -52,10 +45,8 @@ public class AuthenticatedRoutingRateLimitFilter extends OncePerRequestFilter {
         if (maxProviderCalls < MODE_ESTIMATES_PROVIDER_CALLS || windowSeconds < 1 || maxEntries < 100) {
             throw new IllegalArgumentException("Invalid authenticated routing rate-limit configuration");
         }
-        this.maxProviderCalls = maxProviderCalls;
-        this.windowSeconds = windowSeconds;
-        this.maxEntries = maxEntries;
-        this.clock = clock;
+        this.rateLimiter = new InMemoryFixedWindowRateLimiter(maxProviderCalls, windowSeconds, maxEntries);
+        this.clock = Objects.requireNonNull(clock, "clock");
     }
 
     @Override
@@ -74,7 +65,11 @@ public class AuthenticatedRoutingRateLimitFilter extends OncePerRequestFilter {
 
         int providerCallCost = providerCallCost(request);
         String accountKey = user.getId() == null ? "authenticated-without-id" : user.getId().toString();
-        Decision decision = register(accountKey, providerCallCost, clock.instant());
+        InMemoryFixedWindowRateLimiter.Decision decision = rateLimiter.register(
+                accountKey,
+                providerCallCost,
+                clock.instant()
+        );
         if (!decision.allowed()) {
             response.setStatus(429);
             response.setHeader("Retry-After", Long.toString(decision.retryAfterSeconds()));
@@ -98,37 +93,4 @@ public class AuthenticatedRoutingRateLimitFilter extends OncePerRequestFilter {
         return 0;
     }
 
-    private Decision register(String key, int providerCallCost, Instant now) {
-        if (requestsSinceCleanup.incrementAndGet() % 256 == 0) {
-            cleanup(now);
-        }
-        if (!windows.containsKey(key) && windows.size() >= maxEntries) {
-            cleanup(now);
-            if (windows.size() >= maxEntries) {
-                return new Decision(false, windowSeconds);
-            }
-        }
-
-        long epochSecond = now.getEpochSecond();
-        Window window = windows.compute(key, (ignored, current) -> {
-            if (current == null || epochSecond - current.startedAtEpochSecond() >= windowSeconds) {
-                return new Window(epochSecond, providerCallCost);
-            }
-            return new Window(current.startedAtEpochSecond(), current.providerCalls() + providerCallCost);
-        });
-
-        if (window.providerCalls() <= maxProviderCalls) {
-            return new Decision(true, 0);
-        }
-        long retryAfter = Math.max(1, windowSeconds - (epochSecond - window.startedAtEpochSecond()));
-        return new Decision(false, retryAfter);
-    }
-
-    private void cleanup(Instant now) {
-        long cutoff = now.getEpochSecond() - windowSeconds;
-        windows.entrySet().removeIf(entry -> entry.getValue().startedAtEpochSecond() <= cutoff);
-    }
-
-    private record Window(long startedAtEpochSecond, int providerCalls) {}
-    private record Decision(boolean allowed, long retryAfterSeconds) {}
 }
