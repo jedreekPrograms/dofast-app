@@ -1,0 +1,1738 @@
+[
+  {
+    "source_ref": "refs/heads/automation/tracking-captured-at-window",
+    "source_sha": "7efebd292ea15e457058affacbe08eecf7cdf84d",
+    "destination_ref": "refs/heads/automation/tracking-captured-at-window",
+    "sha": "69e163736805803f49a60826239f0d6098ba4168",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/automation/tracking-gps-quality-gate",
+    "source_sha": "4c24b024a809d8cb6feb4700f44ebab2a226cf2e",
+    "destination_ref": "refs/heads/automation/tracking-gps-quality-gate",
+    "sha": "f04f87d0f75fcaff338ad1fce7b388593ac347b4",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/chore/codeql-sast",
+    "source_sha": "a46879574875af243845444fdf2d0514e0403826",
+    "destination_ref": "refs/heads/chore/codeql-sast",
+    "sha": "fb1873437c1d6cc50ceda15de4621b6984b021a4",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/chore/production-foundation",
+    "source_sha": "3890ba0dcf094138404eab70e5cc78b9e605f0d2",
+    "destination_ref": "refs/heads/chore/production-foundation",
+    "sha": "99ee77ca2ba73865c7c5c75fa9fbbf0d5bdd0b27",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/chore/production-foundation-backup",
+    "source_sha": "3890ba0dcf094138404eab70e5cc78b9e605f0d2",
+    "destination_ref": "refs/heads/chore/production-foundation-backup",
+    "sha": "99ee77ca2ba73865c7c5c75fa9fbbf0d5bdd0b27",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/chore/production-foundation-final",
+    "source_sha": "3890ba0dcf094138404eab70e5cc78b9e605f0d2",
+    "destination_ref": "refs/heads/chore/production-foundation-final",
+    "sha": "99ee77ca2ba73865c7c5c75fa9fbbf0d5bdd0b27",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/chore/production-foundation-validated",
+    "source_sha": "3890ba0dcf094138404eab70e5cc78b9e605f0d2",
+    "destination_ref": "refs/heads/chore/production-foundation-validated",
+    "sha": "99ee77ca2ba73865c7c5c75fa9fbbf0d5bdd0b27",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/ci/container-security-sbom",
+    "source_sha": "a430b7acaf7f5f63ea356fd31391dbdbae0fb428",
+    "destination_ref": "refs/heads/ci/container-security-sbom",
+    "sha": "a5b82a1baa0fea9d30d418a5d540269751542100",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/ci/dependabot-updates",
+    "source_sha": "c14def778cac90ce07206005a3345d7c09196e75",
+    "destination_ref": "refs/heads/ci/dependabot-updates",
+    "sha": "d718527803d6b72d5722f2c763f58a975c348d13",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/ci/pin-third-party-actions",
+    "source_sha": "8f35cfbbc54fd6fa36ab293f8e8518d95cdb27ec",
+    "destination_ref": "refs/heads/ci/pin-third-party-actions",
+    "sha": "fa7c5eb64017f504cad829168382932fd1dfb8d2",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/dependabot/maven/apps/api/com.google.api-client-google-api-client-2.9.1",
+    "source_sha": "74397f302b48f2388dc097bcb611386053c33aca",
+    "destination_ref": "refs/heads/archive/source-branches/dependabot/maven/apps/api/com.google.api-client-google-api-client-2.9.1",
+    "sha": "ca67c8b998b38acb1c77cd6d5ba7865fffb512f7",
+    "collision": true
+  },
+  {
+    "source_ref": "refs/heads/dependabot/maven/apps/api/com.stripe-stripe-java-34.0.0",
+    "source_sha": "b67b7fa6f717ea082f121c3da704bbd721519373",
+    "destination_ref": "refs/heads/archive/source-branches/dependabot/maven/apps/api/com.stripe-stripe-java-34.0.0",
+    "sha": "c50504f7ae2fb8a17a85400827c5aaf4756bd271",
+    "collision": true
+  },
+  {
+    "source_ref": "refs/heads/dependabot/npm_and_yarn/apps/web/eslint-10.10.0",
+    "source_sha": "c1208cd41e00b0b733c1512b54d86023995d3654",
+    "destination_ref": "refs/heads/dependabot/npm_and_yarn/apps/web/eslint-10.10.0",
+    "sha": "3df0fc14e8edb70a8cc81139c21fdd3fe817f4a4",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/dependabot/npm_and_yarn/apps/web/eslint-plugin-react-refresh-0.5.6",
+    "source_sha": "e2bdc6f438714d21bddbcfb4dc92fc4206bbf2da",
+    "destination_ref": "refs/heads/dependabot/npm_and_yarn/apps/web/eslint-plugin-react-refresh-0.5.6",
+    "sha": "f9f79248fd3100da230252ea57dd448495463053",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/dependabot/npm_and_yarn/apps/web/globals-17.12.0",
+    "source_sha": "579ddf5b46da979077ef4b03170e118fed382583",
+    "destination_ref": "refs/heads/dependabot/npm_and_yarn/apps/web/globals-17.12.0",
+    "sha": "ad95ede282c6d4729c2ec27632937d7219408cfd",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/dependabot/npm_and_yarn/apps/web/multi-7f19880bf6",
+    "source_sha": "43e6a0eb0e715ceb6ca58b536d5f2341ba2f6df8",
+    "destination_ref": "refs/heads/dependabot/npm_and_yarn/apps/web/multi-7f19880bf6",
+    "sha": "6f0a0345243d8c0879a44bb25f36d5dacc8268df",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/dependabot/npm_and_yarn/apps/web/react-router-dom-7.18.3",
+    "source_sha": "ab19fad6e07cdfe68afe0cadf7e301a7481d5e4b",
+    "destination_ref": "refs/heads/dependabot/npm_and_yarn/apps/web/react-router-dom-7.18.3",
+    "sha": "2c9a30d604d995d6c4f87e6e9ed5b136861d9754",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/docs/roadmap-965-live-status",
+    "source_sha": "b13021f6aedde09570a4d03114fd5fd270383831",
+    "destination_ref": "refs/heads/docs/roadmap-965-live-status",
+    "sha": "e98ab2abbfada824012be6fe3d3f1395da718b05",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/admin-dispute-expense-adjudication-ui",
+    "source_sha": "12e429e09b1ac90c2b40467c963f8b10db0050e9",
+    "destination_ref": "refs/heads/feat/admin-dispute-expense-adjudication-ui",
+    "sha": "66504fb266153bd420a2805944c606d487086d7e",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/admin-dispute-expense-evidence",
+    "source_sha": "ca9609419426ac8bf517500ee260dfaec5603d11",
+    "destination_ref": "refs/heads/feat/admin-dispute-expense-evidence",
+    "sha": "49604714fc969550f9fc19b63461496a5d446168",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/admin-job-report-account-suspension-ui",
+    "source_sha": "0947c1cc1437efb3d48ff261c419acee98db5a5a",
+    "destination_ref": "refs/heads/feat/admin-job-report-account-suspension-ui",
+    "sha": "d26cbf4a5d74a144ec379caee973e82d51bba52f",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/admin-job-report-enforcement-ui",
+    "source_sha": "75a56185930981740483e1e60d84ffa4f7be7a4c",
+    "destination_ref": "refs/heads/feat/admin-job-report-enforcement-ui",
+    "sha": "06ba0971574dfbcf21bb8e497728a02bb064600a",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/admin-job-report-ui",
+    "source_sha": "816ebda0b8ffade0e69c70141a95925706926d65",
+    "destination_ref": "refs/heads/feat/admin-job-report-ui",
+    "sha": "49e60a4f6fa2a10aff64bcafdfa8e37bd15827bc",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/admin-payout-operations-ui",
+    "source_sha": "bd7c0614317327ecfe0cbb653952bccf9c77c19a",
+    "destination_ref": "refs/heads/feat/admin-payout-operations-ui",
+    "sha": "2d70c8d5eb685ff4f1d2867d4e51c6ca6787bc0e",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/admin-reactivation-audit",
+    "source_sha": "02e9a71a3004da4ffc740384229add11d3b86441",
+    "destination_ref": "refs/heads/feat/admin-reactivation-audit",
+    "sha": "359f23d5b9839a9a1c22a5719c85c94c6156aaaa",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/admin-reactivation-audit-history",
+    "source_sha": "f9c4873ef4cdd6d9a0086a5ae4e38fb763208d8f",
+    "destination_ref": "refs/heads/feat/admin-reactivation-audit-history",
+    "sha": "9741176971d6fc8c07c83772059e1d698b23c4d4",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/admin-reactivation-audit-ui",
+    "source_sha": "195ee1b118f5a5a1f83a48f924500dfdeace7c77",
+    "destination_ref": "refs/heads/feat/admin-reactivation-audit-ui",
+    "sha": "233c4bc302a7ecc7b586f680748c258d13e5adf3",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/auth-ip-rate-limit",
+    "source_sha": "e69fdc5566ad95812104485f140eb85e5f4c27a8",
+    "destination_ref": "refs/heads/feat/auth-ip-rate-limit",
+    "sha": "d99a1c1ff8f952a692d36d9af82466b7f8d954d5",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/carlisle-job-discovery",
+    "source_sha": "05f3284e09606eb5a6f2e71557c7b394a7b4d537",
+    "destination_ref": "refs/heads/feat/carlisle-job-discovery",
+    "sha": "b8b8c79dbaae9f6dff54a9ed3be9032d019393c8",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/dispute-expense-adjudication",
+    "source_sha": "4a8af57489a939add544d1aa0f1d358643abbf45",
+    "destination_ref": "refs/heads/feat/dispute-expense-adjudication",
+    "sha": "15444569f54256d0609d79d08b800d969cb46abf",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/email-verification",
+    "source_sha": "6125b58e879e1ee06f22710420ee38ab888c6714",
+    "destination_ref": "refs/heads/feat/email-verification",
+    "sha": "e52cafc7756bf6aede78a9cbc90e4164c0d1f978",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/emergency-account-enforcement",
+    "source_sha": "b5c80c351eb0926f20e46bf8c1b56d3a278fd6de",
+    "destination_ref": "refs/heads/feat/emergency-account-enforcement",
+    "sha": "c63788374cecf9d5d0bab141865bc160f0d541b8",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/finance-settlement-identity-reconciliation",
+    "source_sha": "145718ce9c01776ebba71c2cd6354bbf9c171824",
+    "destination_ref": "refs/heads/feat/finance-settlement-identity-reconciliation",
+    "sha": "17ee1707a7634defafa12094cc819ee3a414bafd",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-attachments-backend",
+    "source_sha": "5fef7bdf1911bb88b2d1ea75c353806844d009c9",
+    "destination_ref": "refs/heads/feat/job-attachments-backend",
+    "sha": "029e79ffad43e734a1c35ff38df48d5ca8274aef",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-attachments-web",
+    "source_sha": "888b00ea7b0c72c484a023d160ba1ffe19ec2b81",
+    "destination_ref": "refs/heads/feat/job-attachments-web",
+    "sha": "0300bcb968862f10ffc8105ad2347ef5dbdcd318",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-expense-claim-ui",
+    "source_sha": "2e7df250ca75062339b3248715ff44a092a23179",
+    "destination_ref": "refs/heads/feat/job-expense-claim-ui",
+    "sha": "ed07cc7a90b1bb4ebc48d9f5d0f43ccb6df4338b",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-expense-escrow-claims",
+    "source_sha": "9c4cd844e1d76ef7ca3f633866e4e8359c06449f",
+    "destination_ref": "refs/heads/feat/job-expense-escrow-claims",
+    "sha": "84fbf582c6fd2cf5fbd3e8dffe83c61f4fd93b6f",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-expense-receipt-retention",
+    "source_sha": "d2011bb0bdeee269f56aceec346ef8487536fc0a",
+    "destination_ref": "refs/heads/feat/job-expense-receipt-retention",
+    "sha": "47eb443f2b70221ad9672bc39395ede48f76b1aa",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-expense-reimbursement",
+    "source_sha": "237280ae1aa23e976349462960b796d3e15ae5a2",
+    "destination_ref": "refs/heads/feat/job-expense-reimbursement",
+    "sha": "79807fa46a8bf25fb8ab6825c9dc690be06b879e",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-expense-web-claims",
+    "source_sha": "5bd41b491f3a348df790b3043499c940223f6361",
+    "destination_ref": "refs/heads/feat/job-expense-web-claims",
+    "sha": "18b95f2cb01e77f5b9826eff7df55cafb6d28d98",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-expense-web-flow",
+    "source_sha": "2e7d74da4bfd7a86f3be6ca8cd2a7dcb1b4bea8e",
+    "destination_ref": "refs/heads/feat/job-expense-web-flow",
+    "sha": "f5e2c4a5c111c888ff5414d7d6de74aa3d7da948",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-expense-workflow-ui",
+    "source_sha": "34cf9db22d72a7baf01fcafc8442c203b2dd55ad",
+    "destination_ref": "refs/heads/feat/job-expense-workflow-ui",
+    "sha": "211589232f5bb97c621b96d82f3b5162f6dffcdc",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-lifecycle-hardening",
+    "source_sha": "05e29f21b9b86dbdeccf793b9d051e43d4c4607f",
+    "destination_ref": "refs/heads/feat/job-lifecycle-hardening",
+    "sha": "9b039fe9d31a2818ecbd0cf3c86c38f26d18fffd",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-proposals-backend",
+    "source_sha": "5a5995e9dff836b4bd3697ceea8e3842b855a5fc",
+    "destination_ref": "refs/heads/feat/job-proposals-backend",
+    "sha": "4b940ae66631941f56955e6f78ca6cdb0a864fbb",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-proposals-web",
+    "source_sha": "650a10b6dcdeeeb39c62ce70a8fd9e6b36c92480",
+    "destination_ref": "refs/heads/feat/job-proposals-web",
+    "sha": "8e0e1cb2a1f5671c14dfd173bcc6a0d5c959b9bc",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-publication-idempotent-expiry",
+    "source_sha": "d82a1ef3ab4d1ac0561a203b028a66ad3539bac9",
+    "destination_ref": "refs/heads/feat/job-publication-idempotent-expiry",
+    "sha": "f4d913b88153c92a9d1b12710549864fc5ab5608",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-publication-lazy-expiry",
+    "source_sha": "7add12c9f024a084f987020c82bb741ef3139697",
+    "destination_ref": "refs/heads/feat/job-publication-lazy-expiry",
+    "sha": "2b4d7f3a6212c87ebcc11d36e6d551c33c1043f6",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-publication-payment-intent-expiry",
+    "source_sha": "421b86f46ae682341b61bf87ba8a14eeddf2defc",
+    "destination_ref": "refs/heads/feat/job-publication-payment-intent-expiry",
+    "sha": "164a6b11e2b35e307d2c3b2df61ae9527be06c02",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-publication-payment-metadata-hardening",
+    "source_sha": "6292f682e5b123fadf6ec890c761ea8089234581",
+    "destination_ref": "refs/heads/feat/job-publication-payment-metadata-hardening",
+    "sha": "4452c4768d77f36b871c654fc8e96b6f3ae5872a",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-publication-payment-retry-guard",
+    "source_sha": "0101fc758f4c952e560f9b59452c074a2f0e1255",
+    "destination_ref": "refs/heads/feat/job-publication-payment-retry-guard",
+    "sha": "fb1177d67295c54d03f3479e3a8eab83466b6931",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-publication-recovery",
+    "source_sha": "0a99b494509ce092add3a2fe1c30df3ec81f5ab8",
+    "destination_ref": "refs/heads/feat/job-publication-recovery",
+    "sha": "ece8f67cc34cce9c2db7f9c9ab9c7167eeaa8fcc",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-publication-recovery-expiry",
+    "source_sha": "db7a08dd16cff5fb0da307959f6474f3ba5e3276",
+    "destination_ref": "refs/heads/feat/job-publication-recovery-expiry",
+    "sha": "e257cca1b02d2b2ee462074b47bbfd44e498b995",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-publication-wallet-funding-type",
+    "source_sha": "ff17738b94727864aa19bcdbad1c55128229da96",
+    "destination_ref": "refs/heads/feat/job-publication-wallet-funding-type",
+    "sha": "597bf374039ffca6222b72808fe624b9348805aa",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-publish-with-payment",
+    "source_sha": "8ae273ca6a7bbd2a36755e04cd9c67b24babf91c",
+    "destination_ref": "refs/heads/feat/job-publish-with-payment",
+    "sha": "c92508de9e81b9c9629976f7a9f9c08726efbcf4",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-report-account-suspension",
+    "source_sha": "f3bbe39da90df2aa1af7d949c30306b17af2c611",
+    "destination_ref": "refs/heads/feat/job-report-account-suspension",
+    "sha": "55225644e59166df346e297f21e6ec795d97d589",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-report-enforcement",
+    "source_sha": "41a51b04098e9355f83d5222c0dc9ffb80348996",
+    "destination_ref": "refs/heads/feat/job-report-enforcement",
+    "sha": "c5e62adc049133835a0fc5d4e559c6a8a4b2a8db",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-report-moderation",
+    "source_sha": "c8950165e75d00c0b2376b9bb0ea54469b06b8c7",
+    "destination_ref": "refs/heads/feat/job-report-moderation",
+    "sha": "69b2df6aed13e4e828313511c47434037befa907",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-report-resolution-notifications",
+    "source_sha": "e437d5e4afa3f0198f2e441020706bb4f4cfe5fe",
+    "destination_ref": "refs/heads/feat/job-report-resolution-notifications",
+    "sha": "46dff1836cbcf6a3a7742738179c65b998c1ca87",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-report-resolution-timestamp",
+    "source_sha": "918a2059f641e7487e4fc889c3e1f97eeeb1bcd4",
+    "destination_ref": "refs/heads/feat/job-report-resolution-timestamp",
+    "sha": "10e5da80abf6184a20e8556f71845fdebbb49869",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-report-withdrawal",
+    "source_sha": "d4a69f11948f5b810b62e5a44c73de51c4da7ea1",
+    "destination_ref": "refs/heads/feat/job-report-withdrawal",
+    "sha": "3f7a4540e15b3d79afc9312961f1b7595840dc8e",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-reporting",
+    "source_sha": "d954f27345b2eb06d0a659167742d5451dfc444c",
+    "destination_ref": "refs/heads/feat/job-reporting",
+    "sha": "5a3196972fc1c0a678415053f40fd5274a81be8c",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/job-reporting-ui",
+    "source_sha": "002a20ec0e1b35bcc791b41e7582bb9716844695",
+    "destination_ref": "refs/heads/feat/job-reporting-ui",
+    "sha": "3b8d8e83c7315e157350b70083fb8ae48af1c4b0",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/location-matching-foundation",
+    "source_sha": "d1379645f2ee14e8f7f40c097c410c6d777de26a",
+    "destination_ref": "refs/heads/feat/location-matching-foundation",
+    "sha": "7d21d7086638e602a3db9fadddedaabc473b4d13",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/marketplace-trust-cards",
+    "source_sha": "5dfc2002e7fe82a6e1640d6c48df2464114e9b84",
+    "destination_ref": "refs/heads/feat/marketplace-trust-cards",
+    "sha": "b20cacbaa1dc94399c274c6b84055966ab2d31ec",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/my-job-reports",
+    "source_sha": "b485446cbc4144c438f686b815a1f4c48d370fa2",
+    "destination_ref": "refs/heads/feat/my-job-reports",
+    "sha": "b1dc85ed51ca8edc46056732c425a3785c0313b1",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/notification-preferences",
+    "source_sha": "d8e976c46c28e1fea7d15d08490a0bf4969b7c40",
+    "destination_ref": "refs/heads/feat/notification-preferences",
+    "sha": "c07c3814c9a3f7214762961af37e00c2f3bb3487",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/password-recovery",
+    "source_sha": "3ad15a2186de940244014a8bc343cb1fb5e2f174",
+    "destination_ref": "refs/heads/feat/password-recovery",
+    "sha": "680dc365a6e9c712cb4c4cb3fe9763840620f4bc",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/password-recovery-cooldown",
+    "source_sha": "6175fd06bbbd98ad20b72051c4d04d3e3f739b13",
+    "destination_ref": "refs/heads/feat/password-recovery-cooldown",
+    "sha": "3c73492dd0709f0402ae95171c467ef8885bf981",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/payment-ledger-purpose-audit",
+    "source_sha": "7f8b49aa113209c1df0c1404406ff24ab1e7ac1d",
+    "destination_ref": "refs/heads/feat/payment-ledger-purpose-audit",
+    "sha": "8c7cd1f20217392bd126945786231cbd5e966f92",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/payout-provider-settlement",
+    "source_sha": "6127dcab70e552b460ef1214aeb87ef0c25e74f6",
+    "destination_ref": "refs/heads/feat/payout-provider-settlement",
+    "sha": "27835d23ae7e8e99195b344504c0ad77a71f90c6",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/payout-terminal-preflight-guard",
+    "source_sha": "76925a70844109db6c23a2bc3b204e881e6370e9",
+    "destination_ref": "refs/heads/feat/payout-terminal-preflight-guard",
+    "sha": "f794c11ade8c6a73c999862d171ced800b0cfd42",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/pending-publication-recovery",
+    "source_sha": "0b6006022bdbb7c5bbf2bc4eff3c4612e7c9b6f7",
+    "destination_ref": "refs/heads/feat/pending-publication-recovery",
+    "sha": "bd58ba25ea59d134e8eae5436538133f1f3ce77d",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/platform-fee-settlement",
+    "source_sha": "94cee3e1795b9d68d55065cbb442bc237df925ee",
+    "destination_ref": "refs/heads/feat/platform-fee-settlement",
+    "sha": "84f25426e09b8e1549ee540171b319989a4f9849",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/private-service-area",
+    "source_sha": "b5f7b56fd40629259557808f4c423bb29fd725e3",
+    "destination_ref": "refs/heads/feat/private-service-area",
+    "sha": "7fa0f285c253da95d31478b570978702c01836fe",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/production-backup-restore",
+    "source_sha": "c2904d3d2077085b489b825f2a98d6fe2175aa4b",
+    "destination_ref": "refs/heads/feat/production-backup-restore",
+    "sha": "274068f812f2762bf7da0fd6682296d1a4dfc396",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/production-deployment-contract",
+    "source_sha": "99e1ab838fccdbc000f7a12d14cfd0bbba334b32",
+    "destination_ref": "refs/heads/feat/production-deployment-contract",
+    "sha": "c19c3581540a581c51f3e28117afd3fbee8aeaee",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/profile-service-specializations",
+    "source_sha": "8cff59ac767b143dbda06faea9f073fe970dffdb",
+    "destination_ref": "refs/heads/feat/profile-service-specializations",
+    "sha": "586c9f0b6ac1ebcf823f8372a5a37edc26885109",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/proposal-acceptance-funding",
+    "source_sha": "1246e4dd297a595c037e16760ad8de2a0662641e",
+    "destination_ref": "refs/heads/feat/proposal-acceptance-funding",
+    "sha": "a1e6a66989b7e49c25be2ba74a2880605c2a2cb3",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/public-job-discovery-rate-limit",
+    "source_sha": "730e33f15e4a9c813a3ee0df5067303f3beff50d",
+    "destination_ref": "refs/heads/feat/public-job-discovery-rate-limit",
+    "sha": "466a1b48b39e1534725e28cafbed46ee6e46ccdf",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/public-profile-details",
+    "source_sha": "b4d388c59c92148ee9ce7f60219309dd794038a3",
+    "destination_ref": "refs/heads/feat/public-profile-details",
+    "sha": "d9ab948c0331a88eb190aa8386a0de50edf5aadb",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/publication-expense-budget-ui",
+    "source_sha": "467461c01f7c71bc4b84e16a9faffcd783272dd7",
+    "destination_ref": "refs/heads/feat/publication-expense-budget-ui",
+    "sha": "e0deb048fa6099e4aa0d22a1046e8fcb044d102c",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/publication-payment-recovery-reason",
+    "source_sha": "7d5ecb90420bc161608b61c3584a3bad1b31ff55",
+    "destination_ref": "refs/heads/feat/publication-payment-recovery-reason",
+    "sha": "07c149982ac995cab745914ff6214ffd5caddc4a",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/publication-redirect-payment-methods",
+    "source_sha": "82ad862847939c2f3feafbdf5ee25981e21dbd5f",
+    "destination_ref": "refs/heads/feat/publication-redirect-payment-methods",
+    "sha": "b19e2231391a827fede15bc208e51753b5938bf4",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/publication-stripe-return-recovery",
+    "source_sha": "ac58399e5af5f64204be85f35d4d4a7d07b38103",
+    "destination_ref": "refs/heads/feat/publication-stripe-return-recovery",
+    "sha": "18b1a62312dbc8aa0247fc82832cbe0bc26b09b0",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/reactivation-audit-reason",
+    "source_sha": "7e5e9b490f7f51bc2e393990152b3dbf7512cff4",
+    "destination_ref": "refs/heads/feat/reactivation-audit-reason",
+    "sha": "9786583b9e7963481d0600cbba86ee92df84bef5",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/recommended-jobs",
+    "source_sha": "1d3c339a2e242d7aae4684455c8570de59161f0f",
+    "destination_ref": "refs/heads/feat/recommended-jobs",
+    "sha": "2aac7c4bc0e7c5bdf291ca330e551d9a592420eb",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/require-destination-arrival-before-completion",
+    "source_sha": "0fa68ecc1b38abad929d61068c9b9743eb19ed29",
+    "destination_ref": "refs/heads/feat/require-destination-arrival-before-completion",
+    "sha": "af99b3a408f83aee968b45c9e2678c35ed972941",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/saved-job-availability-lifecycle",
+    "source_sha": "2665e30f9619fda12c86efb9689277827832f2a1",
+    "destination_ref": "refs/heads/feat/saved-job-availability-lifecycle",
+    "sha": "d372415423f043040f00de01e384172a245b41be",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/saved-jobs",
+    "source_sha": "0fd9302938a00e515c74c53139f94075d41215f0",
+    "destination_ref": "refs/heads/feat/saved-jobs",
+    "sha": "b49207aa2f873a735743b465d8a609001695610e",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/saved-jobs-batch-status",
+    "source_sha": "efe5f7a5d7505bb1fd401336078bf3125d985383",
+    "destination_ref": "refs/heads/feat/saved-jobs-batch-status",
+    "sha": "3c24e6944b02b6fd6e7de5a29bdd34568ebc1983",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/saved-jobs-discovery-state",
+    "source_sha": "24c4f9141061670be9c0e15f101873fb2d688dfd",
+    "destination_ref": "refs/heads/feat/saved-jobs-discovery-state",
+    "sha": "9c4accf78e695444951d512576b4e2f39b16698c",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/saved-jobs-web",
+    "source_sha": "3c419836dd7eeed07a89d6e715558c8ef6e286c8",
+    "destination_ref": "refs/heads/feat/saved-jobs-web",
+    "sha": "2e53329e75bd4c95e4274ac05ef32a263c68673a",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/saved-search-alert-outbox",
+    "source_sha": "ddf29d6015a61bff27e53908e82df4f379e38042",
+    "destination_ref": "refs/heads/feat/saved-search-alert-outbox",
+    "sha": "7391285a690c012936389d3296eff769e935229b",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/saved-search-private-results",
+    "source_sha": "60544c5a275aaceff17ad3a59aa6405ffa65471b",
+    "destination_ref": "refs/heads/feat/saved-search-private-results",
+    "sha": "83eca21a2b683cb3dc26eecb4aa032f81bf6d23a",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/saved-search-radius",
+    "source_sha": "d592dbc03a90489f5c61a593439cc6b28bc8373f",
+    "destination_ref": "refs/heads/feat/saved-search-radius",
+    "sha": "2121da126cb8d5fb7a10a84dba1fbdaf27f38aa9",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/saved-search-radius-web",
+    "source_sha": "d93101a6f9c55e8bfc8f50308229d6dee40f1bd9",
+    "destination_ref": "refs/heads/feat/saved-search-radius-web",
+    "sha": "9a524e309ae3650abbbb1f6d1478e787d656c1fd",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/saved-searches",
+    "source_sha": "4b55a431fde434651627b1c0abeba505870c8313",
+    "destination_ref": "refs/heads/feat/saved-searches",
+    "sha": "1f99c55f27662759cb024cda194c4c6a1bb5ede8",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/secure-refresh-sessions",
+    "source_sha": "1f944635324ad1e7ba58d479bd37be266cac691f",
+    "destination_ref": "refs/heads/feat/secure-refresh-sessions",
+    "sha": "4565eb517f83517ddc10072cc2e22af9c6d64bd3",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/stripe-chargeback-risk",
+    "source_sha": "d71718bcf8f66d25a4103b25aaadac996296cb5c",
+    "destination_ref": "refs/heads/feat/stripe-chargeback-risk",
+    "sha": "465a7827b74e0f7227c696cb04b81a41a0ad7887",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/stripe-connect-live-payout-dispatch",
+    "source_sha": "be6c7ba4b25cd54f640e1fb568e3115d3ceaf12c",
+    "destination_ref": "refs/heads/feat/stripe-connect-live-payout-dispatch",
+    "sha": "2cd4ffae5991a9a17954f2ab1eb2f55ca16b9133",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/stripe-connect-payout-readiness",
+    "source_sha": "abd2dacb5bed1cfa5f87b0cd12e0acc258117ffb",
+    "destination_ref": "refs/heads/feat/stripe-connect-payout-readiness",
+    "sha": "553a5525d814ecdcced40d89615364a6e74c2d4b",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/stripe-connect-submitted-reconciliation",
+    "source_sha": "4320dd27e124a06833dbfe12973e05cd153e2642",
+    "destination_ref": "refs/heads/feat/stripe-connect-submitted-reconciliation",
+    "sha": "9a2712cb37fa69ecd3f06d5bc9398d13de1f7eaf",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/stripe-dispute-event-ordering",
+    "source_sha": "2ab76586c9058100c8762df7f00268a604b01740",
+    "destination_ref": "refs/heads/feat/stripe-dispute-event-ordering",
+    "sha": "602e28b3c563e3d9c58091e34ac8fa47f82e02c3",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/stripe-original-method-refunds",
+    "source_sha": "15fe68f79834f95de581f26ecd4d8f5f46bf012e",
+    "destination_ref": "refs/heads/feat/stripe-original-method-refunds",
+    "sha": "ea93c0ebbe11961242cf0af0493c6c5dea1b345e",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/stripe-payment-purpose-routing",
+    "source_sha": "309abe9dad1137ebc1840ffc7441410e11a1f4f9",
+    "destination_ref": "refs/heads/feat/stripe-payment-purpose-routing",
+    "sha": "fa142eeb2d6619dc5e39e4f5a4ce79826f987d60",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/stripe-payout-event-ordering",
+    "source_sha": "6ba3125612231c02b7acc52940a7a57e301b6405",
+    "destination_ref": "refs/heads/feat/stripe-payout-event-ordering",
+    "sha": "32795ad4f462284d52e0a831b951687e2f133737",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/stripe-refund-terminal-ordering",
+    "source_sha": "210b9954541822ce451ee7c888bc6d4d0aff83a6",
+    "destination_ref": "refs/heads/feat/stripe-refund-terminal-ordering",
+    "sha": "326bf5242825cac502fbd6c5855d2875c6f2de3e",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/stripe-wallet-type-reconciliation",
+    "source_sha": "a94d326dd5402369ec76807ad94889fed10b5c9f",
+    "destination_ref": "refs/heads/feat/stripe-wallet-type-reconciliation",
+    "sha": "896d6211ef85e306c134285cd2620f0d1e9ef379",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/tracking-checkpoint-proximity",
+    "source_sha": "c4e823450872572351260c8b2d3909f38f0690bc",
+    "destination_ref": "refs/heads/feat/tracking-checkpoint-proximity",
+    "sha": "1caf2478ab601049eddff0fc4f18abdec21fb2ad",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/tracking-destination-arrival",
+    "source_sha": "3a055a57261bbe5e682a7729332baf31212bc907",
+    "destination_ref": "refs/heads/feat/tracking-destination-arrival",
+    "sha": "f9b715ac19f7bab04a44cabeec818cc9afa7cec6",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/tracking-destination-arrival-web",
+    "source_sha": "c09392b941583024b646733d03d7ead6c0cdacb5",
+    "destination_ref": "refs/heads/feat/tracking-destination-arrival-web",
+    "sha": "666adb91d87cb1e4db127ceac2a745964889adcb",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/user-block-chat-enforcement",
+    "source_sha": "cd271fbb4fd70bb34ba495f430da5fe2180a2d50",
+    "destination_ref": "refs/heads/feat/user-block-chat-enforcement",
+    "sha": "1f610f3d1e0e7a4c5f07a451b464f7f998582efb",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/user-block-discovery",
+    "source_sha": "6a1113893b690879892b0a54d8e9e6b4885d878b",
+    "destination_ref": "refs/heads/feat/user-block-discovery",
+    "sha": "0f2dc0de5a90db65c636113d452234600357b3ee",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/user-block-job-acceptance",
+    "source_sha": "5c87ba483afe478e19107591b0402ffac6af5a36",
+    "destination_ref": "refs/heads/feat/user-block-job-acceptance",
+    "sha": "2142ad3a4679923d255df75aa46d2e67d3ea52a0",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/user-block-job-detail",
+    "source_sha": "6cb0e30ae47b4b87a846af4f76219f43d350e760",
+    "destination_ref": "refs/heads/feat/user-block-job-detail",
+    "sha": "b4cb2c30b0ea8a75fbbbb3df34fd9ce2b816295f",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/user-block-review-notifications",
+    "source_sha": "0222c1df7eec5998466f360d5d67ecb4bd9032ed",
+    "destination_ref": "refs/heads/feat/user-block-review-notifications",
+    "sha": "83c90e99a75737ee3654c16cfb059108cd65f340",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/user-block-saved-jobs",
+    "source_sha": "499b18538bda37097b4cde4889e653bc03d2a0ca",
+    "destination_ref": "refs/heads/feat/user-block-saved-jobs",
+    "sha": "80d97089656b4517c12c58061361c5ebbc1efc2c",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/user-block-saved-search-alerts",
+    "source_sha": "2294ffee552e385238ea2bc36d568d6581e8297f",
+    "destination_ref": "refs/heads/feat/user-block-saved-search-alerts",
+    "sha": "35f2ed4689ab54a57fd1f5f3512b58108314d1d6",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/user-blocking",
+    "source_sha": "21c7995d2f4c2b4600d06c5c39e97accb0101b6d",
+    "destination_ref": "refs/heads/feat/user-blocking",
+    "sha": "40f9856215d02fbb0afffd573fe7a94db10f46c7",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/user-blocking-web",
+    "source_sha": "105af3ace393e5eda5fa8be822bed87480ef8290",
+    "destination_ref": "refs/heads/feat/user-blocking-web",
+    "sha": "8df5ed4585998ea4fbf06e8f6061316490923ee8",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/wallet-redirect-payment-methods",
+    "source_sha": "f284fac2cf9257701e535e09da2e890d06a37da2",
+    "destination_ref": "refs/heads/feat/wallet-redirect-payment-methods",
+    "sha": "249f58e4ee9548cf9c21be7b9e5b5738df5f142a",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/wallet-source-of-funds",
+    "source_sha": "0a8ebcfaffbfa5b7c95c3a5ab68eb7d0783e990d",
+    "destination_ref": "refs/heads/feat/wallet-source-of-funds",
+    "sha": "dc63baeefea1f620b6af4bdaeb8c2c9e6c2a0578",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/websocket-inbound-rate-limit",
+    "source_sha": "6cc059769a1df399bdcb5dcec3c1de0b814a50af",
+    "destination_ref": "refs/heads/feat/websocket-inbound-rate-limit",
+    "sha": "f36c7c947e7b24471f68e9d2dfd85c34180a84e0",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/websocket-ingress-abuse-controls",
+    "source_sha": "127c327a88449ab7fd9b5f23d9ca6153e485ddb2",
+    "destination_ref": "refs/heads/feat/websocket-ingress-abuse-controls",
+    "sha": "5209cfe53a1a5afde27627cd332e34c042bc3127",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/worker-participant-attachments",
+    "source_sha": "df0d59266aa82f0e6c10abd132b5cdd17bd57631",
+    "destination_ref": "refs/heads/feat/worker-participant-attachments",
+    "sha": "f500449815726dca41d8cef460f37c35e6dfedf6",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feat/worker-payout-requests",
+    "source_sha": "8555c1e0431b65b64b35903e3335d56c280c3df3",
+    "destination_ref": "refs/heads/feat/worker-payout-requests",
+    "sha": "8f77febfd8944d4155b61981aaaf9351c3cd820d",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/apple-sign-in",
+    "source_sha": "6b8d1126458207b13bc272e639e57c0b751216a6",
+    "destination_ref": "refs/heads/feature/apple-sign-in",
+    "sha": "b53aee95a3f5736465b49829e9644a7c2cdbc9ea",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/carlisle-accounts-access",
+    "source_sha": "a42e7be39290a3d20ebe10d39272e33c9028f5fd",
+    "destination_ref": "refs/heads/feature/carlisle-accounts-access",
+    "sha": "10324bc09ec189b6e47ac98d8242a1f5395bb8ee",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/carlisle-chat-notifications",
+    "source_sha": "1b6d410d44da0d1fdebc7ab24eb05151c5be4164",
+    "destination_ref": "refs/heads/feature/carlisle-chat-notifications",
+    "sha": "948286ddfb6ef24dd2939c2734cdab6b93ab4791",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/carlisle-disputes-moderation",
+    "source_sha": "b46496b53492642035542f6fd9ed4c49b976067c",
+    "destination_ref": "refs/heads/feature/carlisle-disputes-moderation",
+    "sha": "926caff62a94c3d788f06f8765e5148bfcda3d28",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/carlisle-location-routing",
+    "source_sha": "591ba8b3997dd6b139103f7823f8d55071c44169",
+    "destination_ref": "refs/heads/feature/carlisle-location-routing",
+    "sha": "3846ef1c23a381a75bffe39a906165c5eeb12a5f",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/carlisle-payments-ledger",
+    "source_sha": "5c7d8d8d73233d3a589e66cc52023b38aa9a2709",
+    "destination_ref": "refs/heads/feature/carlisle-payments-ledger",
+    "sha": "af24484fa77d34b7584f1a5a4cf2d770e528a74d",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/carlisle-reviews-trust",
+    "source_sha": "900a0c905058b14d4d04187d36c90a2ca282046f",
+    "destination_ref": "refs/heads/feature/carlisle-reviews-trust",
+    "sha": "861961ca37725b8c7f6dc3499418d1af38a11b75",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/carlisle-verification",
+    "source_sha": "87341b0116b545928e3f4fa8b4099d85ce33af27",
+    "destination_ref": "refs/heads/feature/carlisle-verification",
+    "sha": "ca2bfa09937e36b9f72e2b6b9d8e9fdc605d4df9",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/category-aware-job-discovery",
+    "source_sha": "e3ce44a90f6ceb0254744fb9af1c4473506e8ead",
+    "destination_ref": "refs/heads/feature/category-aware-job-discovery",
+    "sha": "7d2b846145a3c27b069b57ff91adbd3712b8ff68",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/category-aware-nearby-discovery",
+    "source_sha": "546de6b206a6eb69d2bda8ead879319d2175ac4d",
+    "destination_ref": "refs/heads/feature/category-aware-nearby-discovery",
+    "sha": "43d37183882adbc2e014f0cbd7bcf258e1991e18",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/category-aware-nearby-discovery-v2",
+    "source_sha": "eb4dc6744682ad11c4974c3948099e5a21149d92",
+    "destination_ref": "refs/heads/feature/category-aware-nearby-discovery-v2",
+    "sha": "a8c2eb559fb2e0121b7e36316adcfa087ba864d5",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/courier-tracking-experience",
+    "source_sha": "972a6d4912a280d094dca6725629e1ea2ce60c93",
+    "destination_ref": "refs/heads/feature/courier-tracking-experience",
+    "sha": "095b799340595d18caab5113c4c9f7038291838c",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/google-sign-in",
+    "source_sha": "7a55e490edfb710d0173ce10985bb8011bc93f18",
+    "destination_ref": "refs/heads/feature/google-sign-in",
+    "sha": "30feedbfa85764aa74a914224ce7e89a4c6ccfc9",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/job-cancellation-agreement",
+    "source_sha": "7981b237c6490ab3f95ddd7a6abf75bccb63a3a5",
+    "destination_ref": "refs/heads/feature/job-cancellation-agreement",
+    "sha": "bb62d02a4d8f64971b990d1c68df6ecfedb59563",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/job-category-catalog",
+    "source_sha": "2335a22e188f78cc591cafee547b04c20d9df601",
+    "destination_ref": "refs/heads/feature/job-category-catalog",
+    "sha": "8de930c9c0a5c0a4e2479fbad01087a4cdb1d0f2",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/job-category-selection",
+    "source_sha": "a07a0fb208b784081768b81cc62b65525e8c7f59",
+    "destination_ref": "refs/heads/feature/job-category-selection",
+    "sha": "61566d15860632105ffe97eced89d419e4d7ed3d",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/job-details-hub",
+    "source_sha": "14ef22eaa9a0950f2567e25e057b6e02155c5878",
+    "destination_ref": "refs/heads/feature/job-details-hub",
+    "sha": "095bf704595d34328bb8694a8eb2adbb3dfb9058",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/multi-stop-routes",
+    "source_sha": "f5cf46923742bbbffa1353ebc7273d8cee262ecb",
+    "destination_ref": "refs/heads/feature/multi-stop-routes",
+    "sha": "67aaca08c823d1040c9007d492d06cf0091cf8ff",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/on-site-job-location",
+    "source_sha": "a6c6ce07abb1126f131752383ca566f1b600a1c0",
+    "destination_ref": "refs/heads/feature/on-site-job-location",
+    "sha": "c9a5264aeebdc051f0d7b3d789928569f45af4a0",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/on-site-jobs",
+    "source_sha": "f0c5ddb88fe15b7bdf81bd27972c080f1023cd61",
+    "destination_ref": "refs/heads/feature/on-site-jobs",
+    "sha": "f2d5c13da31fc2f01f9994c3e0214930313b2035",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/route-mode-comparison",
+    "source_sha": "ab50d7a8d25f784ae87bb520f478f6ba27d8c727",
+    "destination_ref": "refs/heads/feature/route-mode-comparison",
+    "sha": "196c9c358eebc4367ea9d3ffd44fd2bec46ab73f",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/tracking-position-sanity",
+    "source_sha": "f97fd9345454a82c40e7ec0b15d9d6fea6f57b2a",
+    "destination_ref": "refs/heads/feature/tracking-position-sanity",
+    "sha": "de2546a0bab866d2d353c0755a5c27ce41de9dba",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/tracking-update-throttle",
+    "source_sha": "98c7f7ab70b907e965e1bed8b2a7e6a0d40aa25b",
+    "destination_ref": "refs/heads/feature/tracking-update-throttle",
+    "sha": "1112727b1c2794613bd0fbb85adacb196081e4d5",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/feature/wallet-stripe-topup-ui",
+    "source_sha": "c8fe61aa001000fb03264d569c575ebb6be988ee",
+    "destination_ref": "refs/heads/feature/wallet-stripe-topup-ui",
+    "sha": "bcbb7da09342fd37d4ec9b4b6c604ca8baf8811f",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/admin-suspension-bypass",
+    "source_sha": "90aaa9b0167306e30e28be98c540750e158ec683",
+    "destination_ref": "refs/heads/fix/admin-suspension-bypass",
+    "sha": "ee190e0b6772f573dd651f5f8c7de3ee7cc7ad1b",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/atomic-tracking-checkpoints",
+    "source_sha": "7c973c0e552b34766915d0d1ed4b81fd321f2ed1",
+    "destination_ref": "refs/heads/fix/atomic-tracking-checkpoints",
+    "sha": "4aa2ab8ebbc2b8d30794bf133ca31869d2bb596a",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/connect-response-review",
+    "source_sha": "c0ced1b4b9bb5dd8e78f1e360dc4faca513a5002",
+    "destination_ref": "refs/heads/fix/connect-response-review",
+    "sha": "1226d636722c46ee8cae68a4fcc517d3fa48d9ca",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/escrow-adjustment-ledger-consistency",
+    "source_sha": "8a9eb9f0ee86225cce50732b6206326172115f6e",
+    "destination_ref": "refs/heads/fix/escrow-adjustment-ledger-consistency",
+    "sha": "076b6e658fe5e00d7340f49ee103890fd3ae155c",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/finance-recovery-isolation",
+    "source_sha": "637fa2b9dacdfc18e952e492d61ed671fec66197",
+    "destination_ref": "refs/heads/fix/finance-recovery-isolation",
+    "sha": "c25c2fb89ab84272a35aeae5437f9b2def7a27c4",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/finance-scheduler-batch-isolation",
+    "source_sha": "28eec36eb8d96511600b11471b1e4f08a6e09e8f",
+    "destination_ref": "refs/heads/fix/finance-scheduler-batch-isolation",
+    "sha": "f28d5618f8c466a7d41eb0210962b1bf00487502",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/google-routes-restclient",
+    "source_sha": "1e93dcc689887ba0a1bd8b6bf4b7114f807fe1ad",
+    "destination_ref": "refs/heads/fix/google-routes-restclient",
+    "sha": "2888fb3ba75f35ad0fcc85ba2f16e07a8ff47d25",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/hide-dispute-enumeration",
+    "source_sha": "beb74765771371f16ec4764395989dc00ca6bec2",
+    "destination_ref": "refs/heads/fix/hide-dispute-enumeration",
+    "sha": "5c8601697759c6c50ec761d067f05c0301bceacf",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/hide-job-publication-enumeration",
+    "source_sha": "ba58cf63b39ecca9ab5cd020c4845d200d7f2ad9",
+    "destination_ref": "refs/heads/fix/hide-job-publication-enumeration",
+    "sha": "dc0793a7487e09915ab8edb9dcb19f5a9e51dfb6",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/hide-non-open-job-details",
+    "source_sha": "a15ec7d4a69a7c7e0db3ffdd6d5cb02262708208",
+    "destination_ref": "refs/heads/fix/hide-non-open-job-details",
+    "sha": "b45c13ea747032734f92d0dd46e2179b968defda",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/hide-route-quote-enumeration",
+    "source_sha": "cc96f453a975393de31eb501fdd5566833be3830",
+    "destination_ref": "refs/heads/fix/hide-route-quote-enumeration",
+    "sha": "294bf1daf61da23c657e438a09eb21b2dfa5d817",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/job-discovery-null-query",
+    "source_sha": "44eb9e2c3e3403e79beaf40183142a8aee827a82",
+    "destination_ref": "refs/heads/fix/job-discovery-null-query",
+    "sha": "2990ae3680c2f6a672c0ff9cf5755bd4968eb086",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/job-publication-expiry-intent-cleanup",
+    "source_sha": "35f550b1ca6eb20a800651a42864435e7ccb8335",
+    "destination_ref": "refs/heads/fix/job-publication-expiry-intent-cleanup",
+    "sha": "507db75e023a2d711f198f360ba3dc97ac759e6a",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/job-publication-intent-cleanup-recovery",
+    "source_sha": "547d47eeb47d8f1c2b5363e50cc5afa07b0353a3",
+    "destination_ref": "refs/heads/fix/job-publication-intent-cleanup-recovery",
+    "sha": "144c39939f533fe951a88a55f4f289afeaf5e3eb",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/job-publication-minimum-funding",
+    "source_sha": "ca188fa63b89c69e54d2eac27079b9d728da2f0b",
+    "destination_ref": "refs/heads/fix/job-publication-minimum-funding",
+    "sha": "fa65be5ebdb83707eb8ba52d699fd7c65931268e",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/job-publication-payment-intent-create-recovery",
+    "source_sha": "154190c1f5b5e415e9d8f8f3be9d374ed3efff7c",
+    "destination_ref": "refs/heads/fix/job-publication-payment-intent-create-recovery",
+    "sha": "a8e358f3c848a2c4413f111e30851519e043f1bd",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/job-publication-purpose-settlement",
+    "source_sha": "634b9343702f31c8b042f8acc87f2776b2b5329e",
+    "destination_ref": "refs/heads/fix/job-publication-purpose-settlement",
+    "sha": "d5aff68e494ce254ef2fdba03240072935767b3b",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/job-publication-wallet-ledger-consistency",
+    "source_sha": "a6870516606e5374e0fea727b88acc97680d54e3",
+    "destination_ref": "refs/heads/fix/job-publication-wallet-ledger-consistency",
+    "sha": "8b24f9b868ee14e0ddc6c66ef927aa6c2d02261c",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/job-report-duplicate-race",
+    "source_sha": "dfe1d51c82faa6117136b0b85fb4ed29f1f59cc4",
+    "destination_ref": "refs/heads/fix/job-report-duplicate-race",
+    "sha": "3f8bb3cc56f238795941aa38147350a4a948d936",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/moderation-cancellation-escrow-refunds",
+    "source_sha": "d180c906eef6fae2d1160b6628b4f17ef80cc7cf",
+    "destination_ref": "refs/heads/fix/moderation-cancellation-escrow-refunds",
+    "sha": "3d0fc803b3db1e2e37f5f354fd34cdf7c2cebb24",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/payout-idempotency-expiry-guard",
+    "source_sha": "861fa0f1307b7bd52812358e1e183b3bd475c8e6",
+    "destination_ref": "refs/heads/fix/payout-idempotency-expiry-guard",
+    "sha": "505acb2b1b06ed43d60c180f6d7cb98358a7b0b1",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/payout-transfer-reversal-crash-safety",
+    "source_sha": "7db109b7198b30351d17a496a89a990250fab663",
+    "destination_ref": "refs/heads/fix/payout-transfer-reversal-crash-safety",
+    "sha": "9ef1017099fbf7b728ea78368d8d03ad8e04b399",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/proposal-payment-redirect-recovery",
+    "source_sha": "562ac9e7201f52b49f7ddd2dda4efdd916d13b51",
+    "destination_ref": "refs/heads/fix/proposal-payment-redirect-recovery",
+    "sha": "8fa5aeeb60382ef36d8440426e9a82ba91ecf820",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/realtime-token-lifecycle",
+    "source_sha": "61a0d115fc258db6e398fbb0643b02e0c7e00b13",
+    "destination_ref": "refs/heads/fix/realtime-token-lifecycle",
+    "sha": "89bb383d7be5c88df47f555afc8b4b2676284e48",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/refund-idempotency-expiry-guard",
+    "source_sha": "0a03390210dd42f510e3310c760b67c3f72fe90d",
+    "destination_ref": "refs/heads/fix/refund-idempotency-expiry-guard",
+    "sha": "337757117b146392d6422619dc46443df122ffa5",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/refund-response-review",
+    "source_sha": "093e00ae9775d55ed991cdc9055a880247008792",
+    "destination_ref": "refs/heads/fix/refund-response-review",
+    "sha": "4c11edcd56675ffbaf80c6f029e974efd0a4d632",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/reviews-trust-category-smoke",
+    "source_sha": "ee74fa103b6af8c6547b9c9a31eb373da7ce1b16",
+    "destination_ref": "refs/heads/fix/reviews-trust-category-smoke",
+    "sha": "ce739dab6f3124930be535b4423ab73519fbcd9d",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/reviews-trust-wallet-provenance-smoke",
+    "source_sha": "85ff2464ffb1cbbf233f4705d92161964094dde2",
+    "destination_ref": "refs/heads/fix/reviews-trust-wallet-provenance-smoke",
+    "sha": "93859d4e943c3e11b870215846547247c4702373",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/stripe-payout-idempotency-clock",
+    "source_sha": "a7b19e8cadf6a0ec877edd9963bb881466a04340",
+    "destination_ref": "refs/heads/fix/stripe-payout-idempotency-clock",
+    "sha": "c56097acde361f708176f24e6f34acdcf0ab5841",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/stripe-refund-idempotency-clock",
+    "source_sha": "efb9f7abc563a4247e925fa523fb7224be2695c3",
+    "destination_ref": "refs/heads/fix/stripe-refund-idempotency-clock",
+    "sha": "674df0a3f3dabeb6adaebddfb284c26a7dab0d8f",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/stripe-refund-wallet-restore-consistency",
+    "source_sha": "f87593007a3088249d70b587f5f13ca6eca702a5",
+    "destination_ref": "refs/heads/fix/stripe-refund-wallet-restore-consistency",
+    "sha": "ac99a9a054cf3bcc1c913ad13ea85c16420e3375",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/stripe-webhook-api-version",
+    "source_sha": "9ed3c8c680fe32906d90cf04657142703837ec85",
+    "destination_ref": "refs/heads/fix/stripe-webhook-api-version",
+    "sha": "6255ac06c4dbf14938ff2aed75148fbadcf0f009",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/suspension-session-revocation",
+    "source_sha": "edb68450e9faf11e6fef91f80d10169297e05b5d",
+    "destination_ref": "refs/heads/fix/suspension-session-revocation",
+    "sha": "048c92178125aded41ff771ab82641c62d64795f",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/fix/web-container-healthcheck",
+    "source_sha": "f3ff4319525f44fbde5a4b3ea915b0de75f73775",
+    "destination_ref": "refs/heads/fix/web-container-healthcheck",
+    "sha": "09974f6e72c4ed07fbbb249a7c76fc246736bf60",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/master",
+    "source_sha": "6cbdb2ea3c77dcf41aa5a35b29a29ab87c2f384e",
+    "destination_ref": "refs/heads/master",
+    "sha": "d66c608811712d293de5ccd446b27ed98b6c732d",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/privacy/exact-location-retention",
+    "source_sha": "8f60669ade1b7b4e57470d867182ee866bd48aef",
+    "destination_ref": "refs/heads/privacy/exact-location-retention",
+    "sha": "b4c5b15c69c57f3a25bed33758bc7d550594e8d9",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/privacy/terminal-exact-location-access",
+    "source_sha": "5b86b35b7cc4c717b5bf61b1307ca96930b98e28",
+    "destination_ref": "refs/heads/privacy/terminal-exact-location-access",
+    "sha": "2949a5149e276c6df5d48ff19ba79ebc6de0b45b",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/admin-dispute-list-service-authorization",
+    "source_sha": "3f9155db8c83e513d2b21d5c20c58a73499c59da",
+    "destination_ref": "refs/heads/security/admin-dispute-list-service-authorization",
+    "sha": "f56ebde1cd3302378b825b35ef4f8aaa8568b2cf",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/authorize-route-quote-creation",
+    "source_sha": "0246d3cf4817dcd17da6d1559c38e659074f67dc",
+    "destination_ref": "refs/heads/security/authorize-route-quote-creation",
+    "sha": "9a692be34bddac6d940dfff01df48a6643d251fc",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/authorize-verification-service",
+    "source_sha": "b327873c6de73956a75d85e27222a31530a2a70e",
+    "destination_ref": "refs/heads/security/authorize-verification-service",
+    "sha": "b59bf41b2a39d475683094562a1d5f3ab5089e8e",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/codify-http-authorization-matrix",
+    "source_sha": "5657a58833b9a06a0c15b34e2ce4fb2ddaeb9cc1",
+    "destination_ref": "refs/heads/security/codify-http-authorization-matrix",
+    "sha": "b82756a080ec3579b79f291823c751f9cfb6d871",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/codify-http-dto-boundaries",
+    "source_sha": "174e12a221143741264f32a595131751802b846f",
+    "destination_ref": "refs/heads/security/codify-http-dto-boundaries",
+    "sha": "4344b0833fc14461272eeefb294da88bf92a874c",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/complete-authorization-audit",
+    "source_sha": "1fcb94e3a7426859aafc157d678ed08500f7af7a",
+    "destination_ref": "refs/heads/security/complete-authorization-audit",
+    "sha": "d3090a667c8549d50d5a229f57d42f49e852efee",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/complete-blocked-user-matrix",
+    "source_sha": "b8bfe6cb6ea3c808a2b59d1e6fe1197c45a0fa4d",
+    "destination_ref": "refs/heads/security/complete-blocked-user-matrix",
+    "sha": "6ec66d5e0b96ae8d5adf779ef02fdef42c9e3aee",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/dispute-cancel-owner-scoping",
+    "source_sha": "1a707292146594cdbb60d82dbd6f03e9d49c8250",
+    "destination_ref": "refs/heads/security/dispute-cancel-owner-scoping",
+    "sha": "15b77b8ea20550b8b0591d0595d5c5e5eef3f713",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/dispute-read-participant-scoping",
+    "source_sha": "5e0b42a0c5ef369609c90ea9266eb794f316cbbd",
+    "destination_ref": "refs/heads/security/dispute-read-participant-scoping",
+    "sha": "cee83778bd0f97638fa573668871c13be0f014bc",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/dispute-read-participant-scoping-v2",
+    "source_sha": "d55f236d802b7d51788369edd0bdaec2f3e838ef",
+    "destination_ref": "refs/heads/security/dispute-read-participant-scoping-v2",
+    "sha": "863c466bff5e4e072b9b91672dc46d10fe447d4b",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/distribute-rate-limits",
+    "source_sha": "93fe03d24e8bf5c4fe73b42cf2c65b495c886f54",
+    "destination_ref": "refs/heads/security/distribute-rate-limits",
+    "sha": "2a6b57f2820a9861c15c236cbe05f6cdab88422e",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/exact-location-participant-scoping",
+    "source_sha": "8aaed81c3363f8a42f5e5c92b6eda94c9686ca7c",
+    "destination_ref": "refs/heads/security/exact-location-participant-scoping",
+    "sha": "aa723836f2d9ad7953550a2002c448d82c9308c1",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/fail-closed-chat-identity",
+    "source_sha": "f9bfe417e3d97b826e8a4ac65aae2fdf2f2a59d9",
+    "destination_ref": "refs/heads/security/fail-closed-chat-identity",
+    "sha": "12d35f3f62c5753eaac607ee0d9145b743bca193",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/fail-closed-job-report-identity",
+    "source_sha": "9ab84d611d88cc5be5e02e57cb956e7ec4028f82",
+    "destination_ref": "refs/heads/security/fail-closed-job-report-identity",
+    "sha": "5b24f86801b7751b921aaef4f1408e24fcc9e46c",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/fail-closed-notification-identity",
+    "source_sha": "08a6cb982143faca1e4e12ed69bca4845d6bd05f",
+    "destination_ref": "refs/heads/security/fail-closed-notification-identity",
+    "sha": "0306227aa323b7aa7691489b4ee471f632481ecf",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/fail-closed-payment-identity",
+    "source_sha": "8a56ff97888b8233606ecfe2b04abe6c3caab95d",
+    "destination_ref": "refs/heads/security/fail-closed-payment-identity",
+    "sha": "04e9b0aa0c8b1cd5c4ebb8f6e97561d6e8e7ab71",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/fail-closed-payout-identity",
+    "source_sha": "458057554601fdb4c04e947ae94411a2e1a1fe2c",
+    "destination_ref": "refs/heads/security/fail-closed-payout-identity",
+    "sha": "590215973a70bda310a791b70958f4a00ccfbc32",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/fail-closed-saved-search-identity",
+    "source_sha": "f33bcb68b07f9998042b521277a72a9bba3b8a6f",
+    "destination_ref": "refs/heads/security/fail-closed-saved-search-identity",
+    "sha": "57ba914eb75dab771ff803b99d2d3b34a37aab2f",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/fail-closed-saved-search-results-identity",
+    "source_sha": "80f30d280ff88b728d9337f75f37f2cf5867e017",
+    "destination_ref": "refs/heads/security/fail-closed-saved-search-results-identity",
+    "sha": "e7ed58c90ead23a5140b4eeeb10f786f7ff9c95b",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/fail-closed-service-area-identity",
+    "source_sha": "33613393efa5c95bfbe30049f960b462f8126a90",
+    "destination_ref": "refs/heads/security/fail-closed-service-area-identity",
+    "sha": "59b91476f99270aa205fbb73ef1451f84d43a831",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/fail-closed-service-categories-identity",
+    "source_sha": "d21e870f1a0e9ee7c1932e44f7ef24e4b6784535",
+    "destination_ref": "refs/heads/security/fail-closed-service-categories-identity",
+    "sha": "41ccf031dc0881e52c9340a132ecb0608995766c",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/fail-closed-stripe-connect-identity",
+    "source_sha": "fc8f70ba6bb4e3037348a722e04b122db6ce42db",
+    "destination_ref": "refs/heads/security/fail-closed-stripe-connect-identity",
+    "sha": "9668a29860ec56f2f76269e9dc402add9cb647df",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/fail-closed-user-account-identity",
+    "source_sha": "af4cc53d1664073cec62a6d88066073a75072520",
+    "destination_ref": "refs/heads/security/fail-closed-user-account-identity",
+    "sha": "6305137bf01518dbb395d66b3217d45447dc6951",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/fail-closed-user-block-identity",
+    "source_sha": "152cc214770ecb46b9fd6ed539b63e555a8d5359",
+    "destination_ref": "refs/heads/security/fail-closed-user-block-identity",
+    "sha": "7f51142793f10fdbca904ea91909238bbb4474fe",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/fail-closed-wallet-history-identity",
+    "source_sha": "580c7efd924d0bb12b3329ce66273567a001726f",
+    "destination_ref": "refs/heads/security/fail-closed-wallet-history-identity",
+    "sha": "29069c39c047187a0f19d7cde8bcf34073ebeaab",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/harden-core-user-boundaries",
+    "source_sha": "da635b39b800e2197273b00bd8cb129dac12c783",
+    "destination_ref": "refs/heads/security/harden-core-user-boundaries",
+    "sha": "f6dc20fb73e05b14840a9a9b1f161b5640b4cf1c",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/harden-payment-actor-boundaries",
+    "source_sha": "8841cacfc786c8b5e093f4db632f0f2900937488",
+    "destination_ref": "refs/heads/security/harden-payment-actor-boundaries",
+    "sha": "5cd5cd570f6f78647c38f6757e5e6f9ad5bc1d3f",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/hide-attachment-mutation-enumeration",
+    "source_sha": "fb299289f1d620b707a53d4ea8bd71444a722d5c",
+    "destination_ref": "refs/heads/security/hide-attachment-mutation-enumeration",
+    "sha": "b50f462e581144c4898f0ce26c85a1e962fe057a",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/hide-expense-enumeration",
+    "source_sha": "c41f884fd64a1eee30fb4e50c91ed941d2d3f2b3",
+    "destination_ref": "refs/heads/security/hide-expense-enumeration",
+    "sha": "2117210a08c8187622c459a6ed7acb3873da0b43",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/hide-payout-cancel-enumeration",
+    "source_sha": "84623ce8f16a5356b7fefb8d8570689982db1abe",
+    "destination_ref": "refs/heads/security/hide-payout-cancel-enumeration",
+    "sha": "aaa8787e199b4e9887c36f1d6916170e1019357d",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/hide-route-quote-enumeration-v2",
+    "source_sha": "6f10587bd35890a5dffc6dc14e1b75d9e3ea2792",
+    "destination_ref": "refs/heads/security/hide-route-quote-enumeration-v2",
+    "sha": "c2068f1de335599b220392708be08e6ec4604877",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/hide-stripe-refund-resource-existence",
+    "source_sha": "6ce479b37428c7ea83e7804f97b3161e86927dc1",
+    "destination_ref": "refs/heads/security/hide-stripe-refund-resource-existence",
+    "sha": "488f8595da4c1c6c586d98d13e6225e978e97c6d",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/hide-suspended-block-targets",
+    "source_sha": "b97460d95ebfdea40206c955fb581f44064ec7ee",
+    "destination_ref": "refs/heads/security/hide-suspended-block-targets",
+    "sha": "f8564d8787d0d4238cba1901de27087502f58d1c",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/job-lifecycle-actor-scoping",
+    "source_sha": "90306ca063718111805a92e6d4232a41ddb676d0",
+    "destination_ref": "refs/heads/security/job-lifecycle-actor-scoping",
+    "sha": "b1ec4026ff1759fbf32c7682c669a0101f17f30f",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/job-report-open-scoping",
+    "source_sha": "b3a26da351beb8f4061be49efd19ff65462c6205",
+    "destination_ref": "refs/heads/security/job-report-open-scoping",
+    "sha": "38810c21e71445b5b9af5a20796dce9f08c3b84c",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/live-tracking-participant-scoping",
+    "source_sha": "05bc6669404e9cffc08e98b17c73c825e769fc0b",
+    "destination_ref": "refs/heads/security/live-tracking-participant-scoping",
+    "sha": "6ffc2882c95276e73536fef38941c87c61bd6324",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/persisted-admin-boundaries",
+    "source_sha": "abe504669cc52746b9e370b242e9ed89e247932a",
+    "destination_ref": "refs/heads/security/persisted-admin-boundaries",
+    "sha": "aa19fc160e447201a554cfedf7d6d9c7ab05c5b2",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/private-chat-participant-scoping",
+    "source_sha": "3a632a4e39e7f6305e55a60e53eabebeaa724485",
+    "destination_ref": "refs/heads/security/private-chat-participant-scoping",
+    "sha": "eb679b34000fc2ffb2581cda841e5aeff1431ea6",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/private-exact-route-participant-scoping",
+    "source_sha": "677024afcd37a499a15c314def33a7d67fe233b3",
+    "destination_ref": "refs/heads/security/private-exact-route-participant-scoping",
+    "sha": "80c181542f83da77a3686eb043c8811327bf87ff",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/private-job-participant-scoping",
+    "source_sha": "9d722b68804e3f1c9cbac12cec0e75b2c7aef2bf",
+    "destination_ref": "refs/heads/security/private-job-participant-scoping",
+    "sha": "b2944a92f1ff8ae8186893e4b10a9c7824d840c2",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/private-job-participant-scoping-2",
+    "source_sha": "b2ebc714bd68f9fc7f88803ea34d509d1fcbfc54",
+    "destination_ref": "refs/heads/security/private-job-participant-scoping-2",
+    "sha": "430039d654f12ad1f64dfa953651cc4e26f2cf09",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/private-live-tracking-participant-scoping",
+    "source_sha": "1220598f1a738469503243047b9e04c002839fd6",
+    "destination_ref": "refs/heads/security/private-live-tracking-participant-scoping",
+    "sha": "3ffdcb7dba04478ab61252a28c3e555536873a47",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/proposal-authorization-scoping",
+    "source_sha": "4a1039eb42c128e928ece72ffb8c9d01e80b39b1",
+    "destination_ref": "refs/heads/security/proposal-authorization-scoping",
+    "sha": "fb54378507e06d12ae431ede704861be8509a192",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/public-profile-active-scoping",
+    "source_sha": "36573ecb63b27ba228b82a7538e24e5413ae1bbc",
+    "destination_ref": "refs/heads/security/public-profile-active-scoping",
+    "sha": "725a06ea3af31cdcd98cd29a74e941d650de2327",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/public-reviews-active-scoping",
+    "source_sha": "ff93238ecccc5863b58415017f0817f71ac6ff7a",
+    "destination_ref": "refs/heads/security/public-reviews-active-scoping",
+    "sha": "0ea9fb01c21822af6c3053fc53a954290da29d9e",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/rate-limit-authenticated-operations",
+    "source_sha": "cd49e7de14d0ad37d72710d0e70a823686235430",
+    "destination_ref": "refs/heads/security/rate-limit-authenticated-operations",
+    "sha": "82ba966fbde25ab96d9795ebd0479d3392ce5ce0",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/reject-suspended-proposal-acceptance",
+    "source_sha": "5e26720c38be76debae8c6e1c4e148ad66591a93",
+    "destination_ref": "refs/heads/security/reject-suspended-proposal-acceptance",
+    "sha": "a41c72e8e6ac5488ceaaef6a1ce8ea6667076e41",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/restrict-websocket-origins",
+    "source_sha": "5ad7fa90dcbad6e86fcee1730dded9c073f2afe1",
+    "destination_ref": "refs/heads/security/restrict-websocket-origins",
+    "sha": "d02888b52550594db1b1c4b210b16fe3e90b9d2c",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/routing-provider-rate-limit",
+    "source_sha": "14bb3536d9341bd8f49a9db7053af30d20294207",
+    "destination_ref": "refs/heads/security/routing-provider-rate-limit",
+    "sha": "dcee9510bf32081f6e4bf3d984558544e8ae3acd",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/saved-job-open-scoping",
+    "source_sha": "a0751035e7bccf6e1831cc838878c97c66c91b2e",
+    "destination_ref": "refs/heads/security/saved-job-open-scoping",
+    "sha": "e4dcde2a3e2e6136a06e15892af2b96cb135629a",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/saved-jobs-auth-fail-closed",
+    "source_sha": "45eeb5f3df17a7b1cdc1c4e457825cf5dc970c20",
+    "destination_ref": "refs/heads/security/saved-jobs-auth-fail-closed",
+    "sha": "9e3f52db969f9d9f9a5f23757a0cbe004d2ba868",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/stripe-api-version-contract",
+    "source_sha": "243d83727aa2095638b8664c54f7b357b95ba733",
+    "destination_ref": "refs/heads/security/stripe-api-version-contract",
+    "sha": "9e32a31b2e42420bcfe9461aec9ac39e4da72f9b",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/tracking-checkpoint-worker-scoping",
+    "source_sha": "e21b0bbbb3ac2595cb2368984bd35cc6391d6c14",
+    "destination_ref": "refs/heads/security/tracking-checkpoint-worker-scoping",
+    "sha": "67dc267243df5013d0ae931f75e24e85d166bd54",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/tracking-checkpoint-worker-scoping-v2",
+    "source_sha": "0e2686773649de0d40ef02fd092a37fa3add3ad7",
+    "destination_ref": "refs/heads/security/tracking-checkpoint-worker-scoping-v2",
+    "sha": "57cd68b01d9afe95fd273afb4d3dc7bda2dff607",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/tracking-location-worker-scoping",
+    "source_sha": "73834b63c293d1d3bee927d4dd1459bfde86fc77",
+    "destination_ref": "refs/heads/security/tracking-location-worker-scoping",
+    "sha": "a10376307c8436c23d8de5122273e35c04c9d3c4",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/websocket-auth-version",
+    "source_sha": "f5b4cfb16a59ca8e5ed73678203fed66dce70210",
+    "destination_ref": "refs/heads/security/websocket-auth-version",
+    "sha": "fff209558ec50f005420f6b6fb0838d65a69e9f3",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/websocket-send-deny",
+    "source_sha": "16f2cae3f36f3787df20d1c5a85ed94f6f1cf936",
+    "destination_ref": "refs/heads/security/websocket-send-deny",
+    "sha": "4793487f99cfb1ccfe8db5f435e39d4e4df86aa2",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/websocket-session-invalidation",
+    "source_sha": "b73e4d0eef819953f23698e692fe2a645cf54018",
+    "destination_ref": "refs/heads/security/websocket-session-invalidation",
+    "sha": "b0e2d0a74ed31d01c277e165f84c91efa6c3b70e",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/security/websocket-session-revalidation",
+    "source_sha": "7677eab74cc885d574e22d4f645a52a7e41ce8f3",
+    "destination_ref": "refs/heads/security/websocket-session-revalidation",
+    "sha": "874f2490a7f3e4afb9528218f5b49a34d30ea20b",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/test/job-publication-settlement-rollback",
+    "source_sha": "9a5e675dff44a2a13edb39df84106f1b28ade4d5",
+    "destination_ref": "refs/heads/test/job-publication-settlement-rollback",
+    "sha": "c0bb0265a9d594b72a1f6aefaa9b9a1e1a6b6848",
+    "collision": false
+  },
+  {
+    "source_ref": "refs/heads/test/stripe-webhook-transaction-crash-safety",
+    "source_sha": "e9fa0a336ec76fb30cbbb0a69ed1fc71f856fdf6",
+    "destination_ref": "refs/heads/test/stripe-webhook-transaction-crash-safety",
+    "sha": "2c7b0047f3396bf1b10c9cacbddc435cc4672b7b",
+    "collision": false
+  }
+]

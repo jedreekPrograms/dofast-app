@@ -1,0 +1,19 @@
+{
+  "source": "jedreekPrograms/dofast",
+  "target": "jedreekPrograms/dofast-app",
+  "archived_at": "2026-10-15T01:36:10.090298+00:00",
+  "source_main": "6cbdb2ea3c77dcf41aa5a35b29a29ab87c2f384e",
+  "target_main": "d66c608811712d293de5ccd446b27ed98b6c732d",
+  "pull_request_count": 251,
+  "merged_count": 215,
+  "open_count": 7,
+  "discussion_comments": 30,
+  "review_comments": 0,
+  "reviews": 0,
+  "timeline_events": 2284,
+  "credential_redactions": {
+    "credential_values": 0
+  },
+  "native_timestamp_recreation": false,
+  "original_authors_preserved_as_metadata": true
+}

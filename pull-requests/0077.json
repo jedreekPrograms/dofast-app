@@ -1,0 +1,910 @@
+{
+  "pull": {
+    "url": "https://api.github.com/repos/jedreekPrograms/dofast/pulls/77",
+    "id": 4382972933,
+    "node_id": "PR_kwDORPBvI88AAAABBT7cBQ",
+    "html_url": "https://github.com/jedreekPrograms/dofast/pull/77",
+    "diff_url": "https://github.com/jedreekPrograms/dofast/pull/77.diff",
+    "patch_url": "https://github.com/jedreekPrograms/dofast/pull/77.patch",
+    "issue_url": "https://api.github.com/repos/jedreekPrograms/dofast/issues/77",
+    "commits_url": "https://api.github.com/repos/jedreekPrograms/dofast/pulls/77/commits",
+    "review_comments_url": "https://api.github.com/repos/jedreekPrograms/dofast/pulls/77/comments",
+    "review_comment_url": "https://api.github.com/repos/jedreekPrograms/dofast/pulls/comments{/number}",
+    "comments_url": "https://api.github.com/repos/jedreekPrograms/dofast/issues/77/comments",
+    "statuses_url": "https://api.github.com/repos/jedreekPrograms/dofast/statuses/333efa1e77fdebc66b1825e345de707bc5118bb7",
+    "number": 77,
+    "state": "closed",
+    "locked": false,
+    "title": "users: add richer public marketplace profiles",
+    "user": {
+      "login": "jedreekPrograms",
+      "id": 221845274,
+      "node_id": "U_kgDODTkXGg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/221845274?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jedreekPrograms",
+      "html_url": "https://github.com/jedreekPrograms",
+      "followers_url": "https://api.github.com/users/jedreekPrograms/followers",
+      "following_url": "https://api.github.com/users/jedreekPrograms/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jedreekPrograms/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jedreekPrograms/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jedreekPrograms/subscriptions",
+      "organizations_url": "https://api.github.com/users/jedreekPrograms/orgs",
+      "repos_url": "https://api.github.com/users/jedreekPrograms/repos",
+      "events_url": "https://api.github.com/users/jedreekPrograms/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jedreekPrograms/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "## Summary\n- add optional `bio` and `publicLocation` fields to user profiles with Flyway V32 and database invariants\n- extend the authenticated profile update flow so owners can edit/clear both public fields\n- normalize blank optional values to `NULL` server-side\n- enrich `GET /users/{id}/profile` with bio, public location and `memberSince`\n- keep trust signals server-derived: ratings, completed-job counts and verification cannot be edited by clients\n- update the profile settings UI and public profile page with responsive presentation\n- add backend regression coverage for normalization and public profile mapping\n- document profile/privacy semantics in `USER_PROFILES.md`\n\n## Privacy / security\n- `publicLocation` is a free-form label only; it is not geocoded and is not connected to private PostGIS job locations, routes or live tracking\n- public profile responses still exclude email, auth data, wallet/payment data, exact locations, verification documents and moderation data\n- React renders bio as text; the backend does not copy any private job/location field into the profile\n- optional fields are size-limited in validation and constrained against persisted blank values in PostgreSQL\n\n## Validation\nRun Maven verify, frontend dependency audit/lint/build, containers/runtime smoke and applicable payment smoke workflows. Do not merge unless the latest head is fully green.",
+    "labels": [],
+    "milestone": null,
+    "active_lock_reason": null,
+    "created_at": "2026-08-28T08:12:33Z",
+    "updated_at": "2026-08-28T08:15:55Z",
+    "closed_at": "2026-08-28T08:15:55Z",
+    "merged_at": "2026-08-28T08:15:55Z",
+    "merge_commit_sha": "c83de1cba7ba1b9a4aaad8409b6e629a40b7c544",
+    "assignee": null,
+    "assignees": [],
+    "requested_reviewers": [],
+    "requested_teams": [],
+    "head": {
+      "label": "jedreekPrograms:feat/public-profile-details",
+      "ref": "feat/public-profile-details",
+      "repo": {
+        "id": 1156607779,
+        "node_id": "R_kgDORPBvIw",
+        "name": "dofast",
+        "full_name": "jedreekPrograms/dofast",
+        "owner": {
+          "login": "jedreekPrograms",
+          "id": 221845274,
+          "node_id": "U_kgDODTkXGg",
+          "avatar_url": "https://avatars.githubusercontent.com/u/221845274?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jedreekPrograms",
+          "html_url": "https://github.com/jedreekPrograms",
+          "followers_url": "https://api.github.com/users/jedreekPrograms/followers",
+          "following_url": "https://api.github.com/users/jedreekPrograms/following{/other_user}",
+          "gists_url": "https://api.github.com/users/jedreekPrograms/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/jedreekPrograms/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/jedreekPrograms/subscriptions",
+          "organizations_url": "https://api.github.com/users/jedreekPrograms/orgs",
+          "repos_url": "https://api.github.com/users/jedreekPrograms/repos",
+          "events_url": "https://api.github.com/users/jedreekPrograms/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/jedreekPrograms/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "private": false,
+        "fork": false,
+        "archived": false,
+        "disabled": false,
+        "description": null,
+        "homepage": null,
+        "language": "Java",
+        "visibility": "public",
+        "is_template": false,
+        "topics": [],
+        "forks_count": 0,
+        "forks": 0,
+        "stargazers_count": 3,
+        "watchers_count": 3,
+        "watchers": 3,
+        "open_issues_count": 7,
+        "open_issues": 7,
+        "size": 2649,
+        "default_branch": "master",
+        "has_issues": true,
+        "has_projects": true,
+        "has_wiki": false,
+        "has_pages": false,
+        "has_downloads": false,
+        "has_discussions": false,
+        "has_pull_requests": true,
+        "pushed_at": "2026-10-12T12:13:28Z",
+        "created_at": "2026-02-12T21:00:16Z",
+        "updated_at": "2026-10-12T02:00:54Z",
+        "allow_forking": true,
+        "web_commit_signoff_required": false,
+        "pull_request_creation_policy": "all",
+        "license": null,
+        "url": "https://api.github.com/repos/jedreekPrograms/dofast",
+        "html_url": "https://github.com/jedreekPrograms/dofast",
+        "archive_url": "https://api.github.com/repos/jedreekPrograms/dofast/{archive_format}{/ref}",
+        "assignees_url": "https://api.github.com/repos/jedreekPrograms/dofast/assignees{/user}",
+        "blobs_url": "https://api.github.com/repos/jedreekPrograms/dofast/git/blobs{/sha}",
+        "branches_url": "https://api.github.com/repos/jedreekPrograms/dofast/branches{/branch}",
+        "collaborators_url": "https://api.github.com/repos/jedreekPrograms/dofast/collaborators{/collaborator}",
+        "comments_url": "https://api.github.com/repos/jedreekPrograms/dofast/comments{/number}",
+        "commits_url": "https://api.github.com/repos/jedreekPrograms/dofast/commits{/sha}",
+        "compare_url": "https://api.github.com/repos/jedreekPrograms/dofast/compare/{base}...{head}",
+        "contents_url": "https://api.github.com/repos/jedreekPrograms/dofast/contents/{+path}",
+        "contributors_url": "https://api.github.com/repos/jedreekPrograms/dofast/contributors",
+        "deployments_url": "https://api.github.com/repos/jedreekPrograms/dofast/deployments",
+        "downloads_url": "https://api.github.com/repos/jedreekPrograms/dofast/downloads",
+        "events_url": "https://api.github.com/repos/jedreekPrograms/dofast/events",
+        "forks_url": "https://api.github.com/repos/jedreekPrograms/dofast/forks",
+        "git_commits_url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits{/sha}",
+        "git_refs_url": "https://api.github.com/repos/jedreekPrograms/dofast/git/refs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/jedreekPrograms/dofast/git/tags{/sha}",
+        "git_url": "git://github.com/jedreekPrograms/dofast.git",
+        "issue_comment_url": "https://api.github.com/repos/jedreekPrograms/dofast/issues/comments{/number}",
+        "issue_events_url": "https://api.github.com/repos/jedreekPrograms/dofast/issues/events{/number}",
+        "issues_url": "https://api.github.com/repos/jedreekPrograms/dofast/issues{/number}",
+        "keys_url": "https://api.github.com/repos/jedreekPrograms/dofast/keys{/key_id}",
+        "labels_url": "https://api.github.com/repos/jedreekPrograms/dofast/labels{/name}",
+        "languages_url": "https://api.github.com/repos/jedreekPrograms/dofast/languages",
+        "merges_url": "https://api.github.com/repos/jedreekPrograms/dofast/merges",
+        "milestones_url": "https://api.github.com/repos/jedreekPrograms/dofast/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/jedreekPrograms/dofast/notifications{?since,all,participating}",
+        "pulls_url": "https://api.github.com/repos/jedreekPrograms/dofast/pulls{/number}",
+        "releases_url": "https://api.github.com/repos/jedreekPrograms/dofast/releases{/id}",
+        "ssh_url": "git@github.com:jedreekPrograms/dofast.git",
+        "stargazers_url": "https://api.github.com/repos/jedreekPrograms/dofast/stargazers",
+        "statuses_url": "https://api.github.com/repos/jedreekPrograms/dofast/statuses/{sha}",
+        "subscribers_url": "https://api.github.com/repos/jedreekPrograms/dofast/subscribers",
+        "subscription_url": "https://api.github.com/repos/jedreekPrograms/dofast/subscription",
+        "tags_url": "https://api.github.com/repos/jedreekPrograms/dofast/tags",
+        "teams_url": "https://api.github.com/repos/jedreekPrograms/dofast/teams",
+        "trees_url": "https://api.github.com/repos/jedreekPrograms/dofast/git/trees{/sha}",
+        "clone_url": "https://github.com/jedreekPrograms/dofast.git",
+        "mirror_url": null,
+        "hooks_url": "https://api.github.com/repos/jedreekPrograms/dofast/hooks",
+        "svn_url": "https://github.com/jedreekPrograms/dofast"
+      },
+      "sha": "333efa1e77fdebc66b1825e345de707bc5118bb7",
+      "user": {
+        "login": "jedreekPrograms",
+        "id": 221845274,
+        "node_id": "U_kgDODTkXGg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/221845274?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jedreekPrograms",
+        "html_url": "https://github.com/jedreekPrograms",
+        "followers_url": "https://api.github.com/users/jedreekPrograms/followers",
+        "following_url": "https://api.github.com/users/jedreekPrograms/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jedreekPrograms/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jedreekPrograms/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jedreekPrograms/subscriptions",
+        "organizations_url": "https://api.github.com/users/jedreekPrograms/orgs",
+        "repos_url": "https://api.github.com/users/jedreekPrograms/repos",
+        "events_url": "https://api.github.com/users/jedreekPrograms/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jedreekPrograms/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      }
+    },
+    "base": {
+      "label": "jedreekPrograms:master",
+      "ref": "master",
+      "repo": {
+        "id": 1156607779,
+        "node_id": "R_kgDORPBvIw",
+        "name": "dofast",
+        "full_name": "jedreekPrograms/dofast",
+        "owner": {
+          "login": "jedreekPrograms",
+          "id": 221845274,
+          "node_id": "U_kgDODTkXGg",
+          "avatar_url": "https://avatars.githubusercontent.com/u/221845274?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jedreekPrograms",
+          "html_url": "https://github.com/jedreekPrograms",
+          "followers_url": "https://api.github.com/users/jedreekPrograms/followers",
+          "following_url": "https://api.github.com/users/jedreekPrograms/following{/other_user}",
+          "gists_url": "https://api.github.com/users/jedreekPrograms/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/jedreekPrograms/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/jedreekPrograms/subscriptions",
+          "organizations_url": "https://api.github.com/users/jedreekPrograms/orgs",
+          "repos_url": "https://api.github.com/users/jedreekPrograms/repos",
+          "events_url": "https://api.github.com/users/jedreekPrograms/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/jedreekPrograms/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "private": false,
+        "fork": false,
+        "archived": false,
+        "disabled": false,
+        "description": null,
+        "homepage": null,
+        "language": "Java",
+        "visibility": "public",
+        "is_template": false,
+        "topics": [],
+        "forks_count": 0,
+        "forks": 0,
+        "stargazers_count": 3,
+        "watchers_count": 3,
+        "watchers": 3,
+        "open_issues_count": 7,
+        "open_issues": 7,
+        "size": 2649,
+        "default_branch": "master",
+        "has_issues": true,
+        "has_projects": true,
+        "has_wiki": false,
+        "has_pages": false,
+        "has_downloads": false,
+        "has_discussions": false,
+        "has_pull_requests": true,
+        "pushed_at": "2026-10-12T12:13:28Z",
+        "created_at": "2026-02-12T21:00:16Z",
+        "updated_at": "2026-10-12T02:00:54Z",
+        "allow_forking": true,
+        "web_commit_signoff_required": false,
+        "pull_request_creation_policy": "all",
+        "license": null,
+        "url": "https://api.github.com/repos/jedreekPrograms/dofast",
+        "html_url": "https://github.com/jedreekPrograms/dofast",
+        "archive_url": "https://api.github.com/repos/jedreekPrograms/dofast/{archive_format}{/ref}",
+        "assignees_url": "https://api.github.com/repos/jedreekPrograms/dofast/assignees{/user}",
+        "blobs_url": "https://api.github.com/repos/jedreekPrograms/dofast/git/blobs{/sha}",
+        "branches_url": "https://api.github.com/repos/jedreekPrograms/dofast/branches{/branch}",
+        "collaborators_url": "https://api.github.com/repos/jedreekPrograms/dofast/collaborators{/collaborator}",
+        "comments_url": "https://api.github.com/repos/jedreekPrograms/dofast/comments{/number}",
+        "commits_url": "https://api.github.com/repos/jedreekPrograms/dofast/commits{/sha}",
+        "compare_url": "https://api.github.com/repos/jedreekPrograms/dofast/compare/{base}...{head}",
+        "contents_url": "https://api.github.com/repos/jedreekPrograms/dofast/contents/{+path}",
+        "contributors_url": "https://api.github.com/repos/jedreekPrograms/dofast/contributors",
+        "deployments_url": "https://api.github.com/repos/jedreekPrograms/dofast/deployments",
+        "downloads_url": "https://api.github.com/repos/jedreekPrograms/dofast/downloads",
+        "events_url": "https://api.github.com/repos/jedreekPrograms/dofast/events",
+        "forks_url": "https://api.github.com/repos/jedreekPrograms/dofast/forks",
+        "git_commits_url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits{/sha}",
+        "git_refs_url": "https://api.github.com/repos/jedreekPrograms/dofast/git/refs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/jedreekPrograms/dofast/git/tags{/sha}",
+        "git_url": "git://github.com/jedreekPrograms/dofast.git",
+        "issue_comment_url": "https://api.github.com/repos/jedreekPrograms/dofast/issues/comments{/number}",
+        "issue_events_url": "https://api.github.com/repos/jedreekPrograms/dofast/issues/events{/number}",
+        "issues_url": "https://api.github.com/repos/jedreekPrograms/dofast/issues{/number}",
+        "keys_url": "https://api.github.com/repos/jedreekPrograms/dofast/keys{/key_id}",
+        "labels_url": "https://api.github.com/repos/jedreekPrograms/dofast/labels{/name}",
+        "languages_url": "https://api.github.com/repos/jedreekPrograms/dofast/languages",
+        "merges_url": "https://api.github.com/repos/jedreekPrograms/dofast/merges",
+        "milestones_url": "https://api.github.com/repos/jedreekPrograms/dofast/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/jedreekPrograms/dofast/notifications{?since,all,participating}",
+        "pulls_url": "https://api.github.com/repos/jedreekPrograms/dofast/pulls{/number}",
+        "releases_url": "https://api.github.com/repos/jedreekPrograms/dofast/releases{/id}",
+        "ssh_url": "git@github.com:jedreekPrograms/dofast.git",
+        "stargazers_url": "https://api.github.com/repos/jedreekPrograms/dofast/stargazers",
+        "statuses_url": "https://api.github.com/repos/jedreekPrograms/dofast/statuses/{sha}",
+        "subscribers_url": "https://api.github.com/repos/jedreekPrograms/dofast/subscribers",
+        "subscription_url": "https://api.github.com/repos/jedreekPrograms/dofast/subscription",
+        "tags_url": "https://api.github.com/repos/jedreekPrograms/dofast/tags",
+        "teams_url": "https://api.github.com/repos/jedreekPrograms/dofast/teams",
+        "trees_url": "https://api.github.com/repos/jedreekPrograms/dofast/git/trees{/sha}",
+        "clone_url": "https://github.com/jedreekPrograms/dofast.git",
+        "mirror_url": null,
+        "hooks_url": "https://api.github.com/repos/jedreekPrograms/dofast/hooks",
+        "svn_url": "https://github.com/jedreekPrograms/dofast"
+      },
+      "sha": "7cddbe120fea79b11141e78b1770dbccce543b25",
+      "user": {
+        "login": "jedreekPrograms",
+        "id": 221845274,
+        "node_id": "U_kgDODTkXGg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/221845274?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jedreekPrograms",
+        "html_url": "https://github.com/jedreekPrograms",
+        "followers_url": "https://api.github.com/users/jedreekPrograms/followers",
+        "following_url": "https://api.github.com/users/jedreekPrograms/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jedreekPrograms/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jedreekPrograms/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jedreekPrograms/subscriptions",
+        "organizations_url": "https://api.github.com/users/jedreekPrograms/orgs",
+        "repos_url": "https://api.github.com/users/jedreekPrograms/repos",
+        "events_url": "https://api.github.com/users/jedreekPrograms/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jedreekPrograms/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      }
+    },
+    "_links": {
+      "comments": {
+        "href": "https://api.github.com/repos/jedreekPrograms/dofast/issues/77/comments"
+      },
+      "commits": {
+        "href": "https://api.github.com/repos/jedreekPrograms/dofast/pulls/77/commits"
+      },
+      "statuses": {
+        "href": "https://api.github.com/repos/jedreekPrograms/dofast/statuses/333efa1e77fdebc66b1825e345de707bc5118bb7"
+      },
+      "html": {
+        "href": "https://github.com/jedreekPrograms/dofast/pull/77"
+      },
+      "issue": {
+        "href": "https://api.github.com/repos/jedreekPrograms/dofast/issues/77"
+      },
+      "review_comments": {
+        "href": "https://api.github.com/repos/jedreekPrograms/dofast/pulls/77/comments"
+      },
+      "review_comment": {
+        "href": "https://api.github.com/repos/jedreekPrograms/dofast/pulls/comments{/number}"
+      },
+      "self": {
+        "href": "https://api.github.com/repos/jedreekPrograms/dofast/pulls/77"
+      }
+    },
+    "author_association": "OWNER",
+    "auto_merge": null,
+    "draft": false,
+    "merged": true,
+    "mergeable": null,
+    "rebaseable": null,
+    "mergeable_state": "unknown",
+    "merged_by": {
+      "login": "jedreekPrograms",
+      "id": 221845274,
+      "node_id": "U_kgDODTkXGg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/221845274?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jedreekPrograms",
+      "html_url": "https://github.com/jedreekPrograms",
+      "followers_url": "https://api.github.com/users/jedreekPrograms/followers",
+      "following_url": "https://api.github.com/users/jedreekPrograms/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jedreekPrograms/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jedreekPrograms/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jedreekPrograms/subscriptions",
+      "organizations_url": "https://api.github.com/users/jedreekPrograms/orgs",
+      "repos_url": "https://api.github.com/users/jedreekPrograms/repos",
+      "events_url": "https://api.github.com/users/jedreekPrograms/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jedreekPrograms/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "comments": 0,
+    "review_comments": 0,
+    "maintainer_can_modify": false,
+    "commits": 13,
+    "additions": 284,
+    "deletions": 7,
+    "changed_files": 13
+  },
+  "discussion_comments": [],
+  "review_comments": [],
+  "reviews": [],
+  "timeline": [
+    {
+      "sha": "2232f5ac725131c8d88c747aeb838c095c7ead06",
+      "node_id": "C_kwDORPBvI9oAKDIyMzJmNWFjNzI1MTMxYzhkODhjNzQ3YWViODM4YzA5NWM3ZWFkMDY",
+      "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/2232f5ac725131c8d88c747aeb838c095c7ead06",
+      "html_url": "https://github.com/jedreekPrograms/dofast/commit/2232f5ac725131c8d88c747aeb838c095c7ead06",
+      "author": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:08:55Z"
+      },
+      "committer": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:08:55Z"
+      },
+      "tree": {
+        "sha": "b429c002efc89d65ea6301ef94ae869259a206ed",
+        "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/trees/b429c002efc89d65ea6301ef94ae869259a206ed"
+      },
+      "message": "users: add public profile fields",
+      "parents": [
+        {
+          "sha": "7cddbe120fea79b11141e78b1770dbccce543b25",
+          "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/7cddbe120fea79b11141e78b1770dbccce543b25",
+          "html_url": "https://github.com/jedreekPrograms/dofast/commit/7cddbe120fea79b11141e78b1770dbccce543b25"
+        }
+      ],
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      },
+      "event": "committed"
+    },
+    {
+      "sha": "d8ae74d268fc49d2930062bcf89eeffd3ec716d5",
+      "node_id": "C_kwDORPBvI9oAKGQ4YWU3NGQyNjhmYzQ5ZDI5MzAwNjJiY2Y4OWVlZmZkM2VjNzE2ZDU",
+      "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/d8ae74d268fc49d2930062bcf89eeffd3ec716d5",
+      "html_url": "https://github.com/jedreekPrograms/dofast/commit/d8ae74d268fc49d2930062bcf89eeffd3ec716d5",
+      "author": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:09:09Z"
+      },
+      "committer": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:09:09Z"
+      },
+      "tree": {
+        "sha": "31ea6d1fdb80dd00f60201efa40e9284fb962945",
+        "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/trees/31ea6d1fdb80dd00f60201efa40e9284fb962945"
+      },
+      "message": "users: persist public profile details",
+      "parents": [
+        {
+          "sha": "2232f5ac725131c8d88c747aeb838c095c7ead06",
+          "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/2232f5ac725131c8d88c747aeb838c095c7ead06",
+          "html_url": "https://github.com/jedreekPrograms/dofast/commit/2232f5ac725131c8d88c747aeb838c095c7ead06"
+        }
+      ],
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      },
+      "event": "committed"
+    },
+    {
+      "sha": "57756c86359849c5772f43ca5ead5fccfd36b235",
+      "node_id": "C_kwDORPBvI9oAKDU3NzU2Yzg2MzU5ODQ5YzU3NzJmNDNjYTVlYWQ1ZmNjZmQzNmIyMzU",
+      "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/57756c86359849c5772f43ca5ead5fccfd36b235",
+      "html_url": "https://github.com/jedreekPrograms/dofast/commit/57756c86359849c5772f43ca5ead5fccfd36b235",
+      "author": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:09:20Z"
+      },
+      "committer": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:09:20Z"
+      },
+      "tree": {
+        "sha": "91864acbb062ca06103f3598daae79a217638940",
+        "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/trees/91864acbb062ca06103f3598daae79a217638940"
+      },
+      "message": "users: extend profile update contract",
+      "parents": [
+        {
+          "sha": "d8ae74d268fc49d2930062bcf89eeffd3ec716d5",
+          "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/d8ae74d268fc49d2930062bcf89eeffd3ec716d5",
+          "html_url": "https://github.com/jedreekPrograms/dofast/commit/d8ae74d268fc49d2930062bcf89eeffd3ec716d5"
+        }
+      ],
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      },
+      "event": "committed"
+    },
+    {
+      "sha": "e26559cc5193fd2c390352f3403e24f70ffef488",
+      "node_id": "C_kwDORPBvI9oAKGUyNjU1OWNjNTE5M2ZkMmMzOTAzNTJmMzQwM2UyNGY3MGZmZWY0ODg",
+      "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/e26559cc5193fd2c390352f3403e24f70ffef488",
+      "html_url": "https://github.com/jedreekPrograms/dofast/commit/e26559cc5193fd2c390352f3403e24f70ffef488",
+      "author": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:09:26Z"
+      },
+      "committer": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:09:26Z"
+      },
+      "tree": {
+        "sha": "d4ae916eea8f1a0157a18b38b3ee8c7fe283e67d",
+        "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/trees/d4ae916eea8f1a0157a18b38b3ee8c7fe283e67d"
+      },
+      "message": "users: expose editable public profile fields to owner",
+      "parents": [
+        {
+          "sha": "57756c86359849c5772f43ca5ead5fccfd36b235",
+          "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/57756c86359849c5772f43ca5ead5fccfd36b235",
+          "html_url": "https://github.com/jedreekPrograms/dofast/commit/57756c86359849c5772f43ca5ead5fccfd36b235"
+        }
+      ],
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      },
+      "event": "committed"
+    },
+    {
+      "sha": "6a06455e08784f9ffeb0e78cc69fe990ef5de37f",
+      "node_id": "C_kwDORPBvI9oAKDZhMDY0NTVlMDg3ODRmOWZmZWIwZTc4Y2M2OWZlOTkwZWY1ZGUzN2Y",
+      "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/6a06455e08784f9ffeb0e78cc69fe990ef5de37f",
+      "html_url": "https://github.com/jedreekPrograms/dofast/commit/6a06455e08784f9ffeb0e78cc69fe990ef5de37f",
+      "author": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:09:31Z"
+      },
+      "committer": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:09:31Z"
+      },
+      "tree": {
+        "sha": "97387b868219a1a1355cb652721b1bf1a163882c",
+        "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/trees/97387b868219a1a1355cb652721b1bf1a163882c"
+      },
+      "message": "users: enrich public profile response",
+      "parents": [
+        {
+          "sha": "e26559cc5193fd2c390352f3403e24f70ffef488",
+          "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/e26559cc5193fd2c390352f3403e24f70ffef488",
+          "html_url": "https://github.com/jedreekPrograms/dofast/commit/e26559cc5193fd2c390352f3403e24f70ffef488"
+        }
+      ],
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      },
+      "event": "committed"
+    },
+    {
+      "sha": "48537de962d15cf095a949c6251a930a367c4b77",
+      "node_id": "C_kwDORPBvI9oAKDQ4NTM3ZGU5NjJkMTVjZjA5NWE5NDljNjI1MWE5MzBhMzY3YzRiNzc",
+      "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/48537de962d15cf095a949c6251a930a367c4b77",
+      "html_url": "https://github.com/jedreekPrograms/dofast/commit/48537de962d15cf095a949c6251a930a367c4b77",
+      "author": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:10:01Z"
+      },
+      "committer": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:10:01Z"
+      },
+      "tree": {
+        "sha": "ce7dd7e7ac2338fb39cb177ad3bcde0c670d9757",
+        "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/trees/ce7dd7e7ac2338fb39cb177ad3bcde0c670d9757"
+      },
+      "message": "users: save normalized public profile details",
+      "parents": [
+        {
+          "sha": "6a06455e08784f9ffeb0e78cc69fe990ef5de37f",
+          "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/6a06455e08784f9ffeb0e78cc69fe990ef5de37f",
+          "html_url": "https://github.com/jedreekPrograms/dofast/commit/6a06455e08784f9ffeb0e78cc69fe990ef5de37f"
+        }
+      ],
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      },
+      "event": "committed"
+    },
+    {
+      "sha": "a8767fd6f2178e7dea710269d6d09e1fea312178",
+      "node_id": "C_kwDORPBvI9oAKGE4NzY3ZmQ2ZjIxNzhlN2RlYTcxMDI2OWQ2ZDA5ZTFmZWEzMTIxNzg",
+      "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/a8767fd6f2178e7dea710269d6d09e1fea312178",
+      "html_url": "https://github.com/jedreekPrograms/dofast/commit/a8767fd6f2178e7dea710269d6d09e1fea312178",
+      "author": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:10:09Z"
+      },
+      "committer": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:10:09Z"
+      },
+      "tree": {
+        "sha": "1eab346a297f37cab017fb3bb39ed8307a4e4964",
+        "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/trees/1eab346a297f37cab017fb3bb39ed8307a4e4964"
+      },
+      "message": "users: return public profile details",
+      "parents": [
+        {
+          "sha": "48537de962d15cf095a949c6251a930a367c4b77",
+          "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/48537de962d15cf095a949c6251a930a367c4b77",
+          "html_url": "https://github.com/jedreekPrograms/dofast/commit/48537de962d15cf095a949c6251a930a367c4b77"
+        }
+      ],
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      },
+      "event": "committed"
+    },
+    {
+      "sha": "0aae2cb207b0092b9f382e22c54978f15f1a04cd",
+      "node_id": "C_kwDORPBvI9oAKDBhYWUyY2IyMDdiMDA5MmI5ZjM4MmUyMmM1NDk3OGYxNWYxYTA0Y2Q",
+      "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/0aae2cb207b0092b9f382e22c54978f15f1a04cd",
+      "html_url": "https://github.com/jedreekPrograms/dofast/commit/0aae2cb207b0092b9f382e22c54978f15f1a04cd",
+      "author": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:10:38Z"
+      },
+      "committer": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:10:38Z"
+      },
+      "tree": {
+        "sha": "93a97b9f951e4e673503b5ad047e5f34e9949f2d",
+        "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/trees/93a97b9f951e4e673503b5ad047e5f34e9949f2d"
+      },
+      "message": "test: cover public profile details",
+      "parents": [
+        {
+          "sha": "a8767fd6f2178e7dea710269d6d09e1fea312178",
+          "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/a8767fd6f2178e7dea710269d6d09e1fea312178",
+          "html_url": "https://github.com/jedreekPrograms/dofast/commit/a8767fd6f2178e7dea710269d6d09e1fea312178"
+        }
+      ],
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      },
+      "event": "committed"
+    },
+    {
+      "sha": "033c40ff5702f3557acfd4b43c413888fed6145d",
+      "node_id": "C_kwDORPBvI9oAKDAzM2M0MGZmNTcwMmYzNTU3YWNmZDRiNDNjNDEzODg4ZmVkNjE0NWQ",
+      "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/033c40ff5702f3557acfd4b43c413888fed6145d",
+      "html_url": "https://github.com/jedreekPrograms/dofast/commit/033c40ff5702f3557acfd4b43c413888fed6145d",
+      "author": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:11:15Z"
+      },
+      "committer": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:11:15Z"
+      },
+      "tree": {
+        "sha": "9f738fb01288153658081ec17c8de27723c6d167",
+        "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/trees/9f738fb01288153658081ec17c8de27723c6d167"
+      },
+      "message": "web: edit public profile details",
+      "parents": [
+        {
+          "sha": "0aae2cb207b0092b9f382e22c54978f15f1a04cd",
+          "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/0aae2cb207b0092b9f382e22c54978f15f1a04cd",
+          "html_url": "https://github.com/jedreekPrograms/dofast/commit/0aae2cb207b0092b9f382e22c54978f15f1a04cd"
+        }
+      ],
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      },
+      "event": "committed"
+    },
+    {
+      "sha": "9aac2e4a4f4a4edd3e7bc2bce6391ab50aee5d11",
+      "node_id": "C_kwDORPBvI9oAKDlhYWMyZTRhNGY0YTRlZGQzZTdiYzJiY2U2MzkxYWI1MGFlZTVkMTE",
+      "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/9aac2e4a4f4a4edd3e7bc2bce6391ab50aee5d11",
+      "html_url": "https://github.com/jedreekPrograms/dofast/commit/9aac2e4a4f4a4edd3e7bc2bce6391ab50aee5d11",
+      "author": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:11:32Z"
+      },
+      "committer": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:11:32Z"
+      },
+      "tree": {
+        "sha": "b28f5e34bb75d56b65495b93bd8d274f1898c4f5",
+        "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/trees/b28f5e34bb75d56b65495b93bd8d274f1898c4f5"
+      },
+      "message": "web: show richer public user profiles",
+      "parents": [
+        {
+          "sha": "033c40ff5702f3557acfd4b43c413888fed6145d",
+          "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/033c40ff5702f3557acfd4b43c413888fed6145d",
+          "html_url": "https://github.com/jedreekPrograms/dofast/commit/033c40ff5702f3557acfd4b43c413888fed6145d"
+        }
+      ],
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      },
+      "event": "committed"
+    },
+    {
+      "sha": "53d50f4a92cc64db81718c52d20105be5f791b50",
+      "node_id": "C_kwDORPBvI9oAKDUzZDUwZjRhOTJjYzY0ZGI4MTcxOGM1MmQyMDEwNWJlNWY3OTFiNTA",
+      "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/53d50f4a92cc64db81718c52d20105be5f791b50",
+      "html_url": "https://github.com/jedreekPrograms/dofast/commit/53d50f4a92cc64db81718c52d20105be5f791b50",
+      "author": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:11:39Z"
+      },
+      "committer": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:11:39Z"
+      },
+      "tree": {
+        "sha": "5b6dad878d10d38ef333d6c3bc07b5556e3a821a",
+        "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/trees/5b6dad878d10d38ef333d6c3bc07b5556e3a821a"
+      },
+      "message": "web: style public profile editor",
+      "parents": [
+        {
+          "sha": "9aac2e4a4f4a4edd3e7bc2bce6391ab50aee5d11",
+          "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/9aac2e4a4f4a4edd3e7bc2bce6391ab50aee5d11",
+          "html_url": "https://github.com/jedreekPrograms/dofast/commit/9aac2e4a4f4a4edd3e7bc2bce6391ab50aee5d11"
+        }
+      ],
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      },
+      "event": "committed"
+    },
+    {
+      "sha": "0e2853b12420fea8c6d504823062cfd6d8fa58b0",
+      "node_id": "C_kwDORPBvI9oAKDBlMjg1M2IxMjQyMGZlYThjNmQ1MDQ4MjMwNjJjZmQ2ZDhmYTU4YjA",
+      "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/0e2853b12420fea8c6d504823062cfd6d8fa58b0",
+      "html_url": "https://github.com/jedreekPrograms/dofast/commit/0e2853b12420fea8c6d504823062cfd6d8fa58b0",
+      "author": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:11:54Z"
+      },
+      "committer": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:11:54Z"
+      },
+      "tree": {
+        "sha": "e5ef0bbcac3e20ba5d1671ae0edb058cd5660c79",
+        "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/trees/e5ef0bbcac3e20ba5d1671ae0edb058cd5660c79"
+      },
+      "message": "web: style richer public profiles",
+      "parents": [
+        {
+          "sha": "53d50f4a92cc64db81718c52d20105be5f791b50",
+          "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/53d50f4a92cc64db81718c52d20105be5f791b50",
+          "html_url": "https://github.com/jedreekPrograms/dofast/commit/53d50f4a92cc64db81718c52d20105be5f791b50"
+        }
+      ],
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      },
+      "event": "committed"
+    },
+    {
+      "sha": "333efa1e77fdebc66b1825e345de707bc5118bb7",
+      "node_id": "C_kwDORPBvI9oAKDMzM2VmYTFlNzdmZGViYzY2YjE4MjVlMzQ1ZGU3MDdiYzUxMThiYjc",
+      "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/333efa1e77fdebc66b1825e345de707bc5118bb7",
+      "html_url": "https://github.com/jedreekPrograms/dofast/commit/333efa1e77fdebc66b1825e345de707bc5118bb7",
+      "author": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:12:09Z"
+      },
+      "committer": {
+        "name": "Jędrzej Stefanowski",
+        "email": "jedreek323@gmail.com",
+        "date": "2026-08-28T08:12:09Z"
+      },
+      "tree": {
+        "sha": "99203be5f9c4d157ec38f13fdd9fea3464f50e22",
+        "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/trees/99203be5f9c4d157ec38f13fdd9fea3464f50e22"
+      },
+      "message": "docs: document public user profiles",
+      "parents": [
+        {
+          "sha": "0e2853b12420fea8c6d504823062cfd6d8fa58b0",
+          "url": "https://api.github.com/repos/jedreekPrograms/dofast/git/commits/0e2853b12420fea8c6d504823062cfd6d8fa58b0",
+          "html_url": "https://github.com/jedreekPrograms/dofast/commit/0e2853b12420fea8c6d504823062cfd6d8fa58b0"
+        }
+      ],
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      },
+      "event": "committed"
+    },
+    {
+      "id": 30153387142,
+      "node_id": "ME_lADORPBvI88AAAABOnwAvs8AAAAHBUgshg",
+      "url": "https://api.github.com/repos/jedreekPrograms/dofast/issues/events/30153387142",
+      "actor": {
+        "login": "jedreekPrograms",
+        "id": 221845274,
+        "node_id": "U_kgDODTkXGg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/221845274?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jedreekPrograms",
+        "html_url": "https://github.com/jedreekPrograms",
+        "followers_url": "https://api.github.com/users/jedreekPrograms/followers",
+        "following_url": "https://api.github.com/users/jedreekPrograms/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jedreekPrograms/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jedreekPrograms/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jedreekPrograms/subscriptions",
+        "organizations_url": "https://api.github.com/users/jedreekPrograms/orgs",
+        "repos_url": "https://api.github.com/users/jedreekPrograms/repos",
+        "events_url": "https://api.github.com/users/jedreekPrograms/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jedreekPrograms/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "event": "merged",
+      "commit_id": "c83de1cba7ba1b9a4aaad8409b6e629a40b7c544",
+      "commit_url": "https://api.github.com/repos/jedreekPrograms/dofast/commits/c83de1cba7ba1b9a4aaad8409b6e629a40b7c544",
+      "created_at": "2026-08-28T08:15:55Z",
+      "performed_via_github_app": null
+    },
+    {
+      "id": 30153387231,
+      "node_id": "CE_lADORPBvI88AAAABOnwAvs8AAAAHBUgs3w",
+      "url": "https://api.github.com/repos/jedreekPrograms/dofast/issues/events/30153387231",
+      "actor": {
+        "login": "jedreekPrograms",
+        "id": 221845274,
+        "node_id": "U_kgDODTkXGg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/221845274?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jedreekPrograms",
+        "html_url": "https://github.com/jedreekPrograms",
+        "followers_url": "https://api.github.com/users/jedreekPrograms/followers",
+        "following_url": "https://api.github.com/users/jedreekPrograms/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jedreekPrograms/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jedreekPrograms/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jedreekPrograms/subscriptions",
+        "organizations_url": "https://api.github.com/users/jedreekPrograms/orgs",
+        "repos_url": "https://api.github.com/users/jedreekPrograms/repos",
+        "events_url": "https://api.github.com/users/jedreekPrograms/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jedreekPrograms/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "event": "closed",
+      "commit_id": null,
+      "commit_url": null,
+      "created_at": "2026-08-28T08:15:55Z",
+      "state_reason": null,
+      "intent": null,
+      "performed_via_github_app": null
+    }
+  ]
+}
