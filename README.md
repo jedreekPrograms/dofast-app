@@ -1,31 +1,49 @@
-# doFast
+# doFast — Local Task Marketplace
 
-**doFast** is a local peer-to-peer task marketplace for getting everyday jobs done quickly and safely. A requester publishes a paid task, another user accepts it, funds are protected while the task is in progress, and payment is released after completion.
+A full-stack application for publishing local paid tasks, finding nearby work and coordinating a task from acceptance through completion and settlement.
 
-The repository is organized as a production-oriented monorepo so the API, web client, infrastructure and operational documentation evolve together.
+**Status: actively in development.** Core workflows and supporting tests are implemented; product polish, external integrations and deployment validation are ongoing. Use provider test environments for local payment development.
 
-## Repository layout
+## Product workflow
 
-```text
-.
-├── apps/
-│   ├── api/                 # Spring Boot API
-│   └── web/                 # React + Vite web client
-├── infra/
-│   ├── compose/             # production-oriented Compose definition
-│   └── nginx/               # web gateway configuration
-├── docs/                    # architecture, development and security docs
-├── scripts/                 # developer convenience scripts
-├── .github/                 # CI configuration
-├── compose.yaml             # local full-stack environment
-└── .env.example             # documented local configuration contract
-```
+A requester publishes a task with its location and funding requirements. Another user discovers the task and accepts it or submits a proposal. The application coordinates progress, communication, completion and settlement, with supporting review and dispute workflows.
 
-## Local quick start
+| Area | Implementation in this repository |
+| --- | --- |
+| Accounts and access | Account management, browser-session security and authorization policies |
+| Tasks | Publication, discovery, assignment, cancellation and lifecycle rules |
+| Location | PostGIS nearby queries, route and tracking features, exact-location privacy |
+| Payments | Stripe integration, escrow transitions, wallet ledger and reconciliation logic |
+| Communication and trust | Chat, notifications, reviews, verification and disputes |
 
-Requirements: Docker Desktop / Docker Engine with Compose v2.
+Feature coverage and operational readiness continue to evolve. The domain documents linked below describe the current contracts and limitations.
 
-```bash
+## Backend engineering
+
+- **Modular monolith:** domain boundaries remain explicit while related state changes can share transaction boundaries.
+- **PostgreSQL as the source of truth:** job state, financial records and ownership rules remain in the transactional database.
+- **PostGIS discovery:** geographic matching is performed in indexed database queries.
+- **Versioned schema changes:** Flyway owns migrations rather than Hibernate schema auto-update.
+- **External integration boundaries:** payment and provider behavior is separated from application use cases.
+- **Privacy and abuse controls:** access policies, location retention, attachment handling and Redis-backed request budgets are documented and tested.
+
+## Technology
+
+| Layer | Stack |
+| --- | --- |
+| API | Java 21, Spring Boot 4.1, Spring Data JPA/Hibernate, Spring Security |
+| Data | PostgreSQL 18 / PostGIS, Flyway, Redis 7.4 |
+| Web | React 19, Vite |
+| Runtime | Docker Compose, Nginx |
+| Validation | Backend and frontend tests, runtime smoke scripts, GitHub Actions configuration |
+
+## Run locally
+
+Requirements: Docker Desktop or Docker Engine with Compose v2.
+
+From the repository root:
+
+```shell
 cp .env.example .env
 docker compose up --build
 ```
@@ -37,43 +55,53 @@ Copy-Item .env.example .env
 docker compose up --build
 ```
 
-Services:
+Review `.env` before starting. Its provider keys are placeholders; exercising Stripe or other external integrations requires the corresponding test configuration. A running local stack does not by itself demonstrate a configured payment-provider flow.
 
-- Web: `http://localhost:5173`
-- API: `http://localhost:8080`
-- API health: `http://localhost:8080/actuator/health`
-- PostgreSQL/PostGIS: `localhost:5434`
+| Service | Local address |
+| --- | --- |
+| Web | http://localhost:5173 |
+| API | http://localhost:8080 |
+| API health | http://localhost:8080/actuator/health |
+| PostgreSQL / PostGIS | `localhost:5434` |
 
-For IDE-based backend development you can start only the database with `docker compose up -d db` and run the API from `apps/api`.
+For backend development outside Docker, use Java 21 and follow the [development guide](docs/DEVELOPMENT.md). Web development outside Docker uses the Node.js version documented there.
 
-## Technology baseline
+## Repository map
 
-- Java 21 LTS
-- Spring Boot 4.1.x
-- React 19 + Vite
-- PostgreSQL 18.6 + PostGIS
-- Redis 7.4 for shared application abuse budgets
-- Flyway database migrations
-- Docker / Docker Compose
-- Nginx
-- GitHub Actions
+| Path | Purpose |
+| --- | --- |
+| [apps/api](apps/api/) | Spring Boot API and backend tests |
+| [apps/web](apps/web/) | Customer and administration interface |
+| [infra](infra/) | Gateway and deployment configuration |
+| [docs](docs/) | Architecture, domain contracts and operating guides |
+| [scripts](scripts/) | Development helpers |
+| [compose.yaml](compose.yaml) | Local services |
+| [.env.example](.env.example) | Example configuration |
 
-## Why PostgreSQL + PostGIS
+## Checks
 
-The core doFast workflow is transactional and money-sensitive, so the primary datastore is PostgreSQL rather than a document database. PostgreSQL gives us strong transaction semantics, mature locking/concurrency tools and rich indexing, while PostGIS provides indexed geographic matching for nearby tasks without moving distance calculations into application memory.
+```shell
+mvn -B -f apps/api/pom.xml verify
+npm --prefix apps/web ci
+npm --prefix apps/web test
+npm --prefix apps/web run lint
+npm --prefix apps/web run build
+```
 
-## Documentation
+Some integration checks need additional services. Redis integration tests and the container-based smoke scenarios have their prerequisites configured in the [CI workflow](.github/workflows/ci.yml) and [.github/scripts](.github/scripts/).
 
-- [Architecture](docs/ARCHITECTURE.md)
-- [Accounts and access](docs/ACCOUNTS_AND_ACCESS.md)
-- [Job lifecycle](docs/JOB_LIFECYCLE.md)
-- [Job discovery](docs/JOB_DISCOVERY.md)
-- [Location and nearby matching](docs/LOCATION_AND_MATCHING.md)
-- [Production deployment](docs/PRODUCTION_DEPLOYMENT.md)
-- [Development](docs/DEVELOPMENT.md)
-- [Security baseline](docs/SECURITY.md)
-- [Distributed rate limiting](docs/DISTRIBUTED_RATE_LIMITING.md)
+**Current CI configuration note:** the default branch is `main`, while the primary workflow still filters `master` for its default-branch push/PR triggers. Updating those filters remains necessary for automatic coverage of `main`.
 
-## Project status
+## Explore the design
 
-The repository is being developed on the **Carlisle** technical baseline. Core marketplace concepts already exist, but the product is still under active development and should not yet be treated as production-ready for real customer funds.
+| Topic | Documentation |
+| --- | --- |
+| System boundaries | [Architecture](docs/ARCHITECTURE.md) |
+| Ownership and task transitions | [Job lifecycle](docs/JOB_LIFECYCLE.md) |
+| Geographic discovery | [Location and matching](docs/LOCATION_AND_MATCHING.md) |
+| Money and auditability | [Payments and ledger](docs/PAYMENTS_AND_LEDGER.md) |
+| Access and security | [Accounts](docs/ACCOUNTS_AND_ACCESS.md), [security](docs/SECURITY.md) |
+| Distributed abuse budgets | [Rate limiting](docs/DISTRIBUTED_RATE_LIMITING.md) |
+| Operations | [Deployment](docs/PRODUCTION_DEPLOYMENT.md), [backup and restore](docs/BACKUP_AND_RESTORE.md) |
+
+The repository uses the Carlisle technical baseline.
